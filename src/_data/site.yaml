@@ -13,6 +13,8 @@ nav:
   logo_prefix: "CO"
   logo_suffix: "·WORKER LABS"
   links:
+    - label: "Home"
+      url: "index.html"
     - label: "Programs"
       url: "programs.html"
     - label: "Why Us"
