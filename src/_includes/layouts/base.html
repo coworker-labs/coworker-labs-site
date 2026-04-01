@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}{{ meta.title }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ meta.description }}{% endblock %}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════════════════════ -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><span>{{ site.nav.logo_prefix }}</span>{{ site.nav.logo_suffix }}</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        {% for link in site.nav.links %}
+        <li><a href="{{ link.url }}"{% if current_page == link.url %} style="color:var(--white)"{% endif %}>{{ link.label }}</a></li>
+        {% endfor %}
+        <li><a href="{{ site.nav.cta_url }}" class="btn btn-primary nav-cta">{{ site.nav.cta_label }}</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  {% block content %}{% endblock %}
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-logo"><span>{{ site.footer.logo_prefix }}</span>{{ site.footer.logo_suffix }} &nbsp;·&nbsp; {{ site.footer.location }}</div>
+      <ul class="footer-links">
+        {% for link in site.footer.links %}
+        <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+        {% endfor %}
+      </ul>
+      <div class="footer-copy">{{ site.footer.copyright }}</div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    if (toggle && links) {
+      toggle.addEventListener('click', () => links.classList.toggle('open'));
+      links.querySelectorAll('a').forEach(a =>
+        a.addEventListener('click', () => links.classList.remove('open'))
+      );
+    }
+  </script>
+  {% block extra_scripts %}{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+site_name: "CO·WORKER LABS"
+site_name_prefix: "CO"
+site_name_suffix: "·WORKER LABS"
+tagline: "Silicon Valley"
+copyright: "© 2026 Coworker Labs"
+
+contact:
+  email: "aparoop@coworkerlabs.com"
+  linkedin: "https://www.linkedin.com/in/aparoop/"
+  linkedin_label: "linkedin.com/in/aparoop"
+
+nav:
+  logo_prefix: "CO"
+  logo_suffix: "·WORKER LABS"
+  links:
+    - label: "Programs"
+      url: "programs.html"
+    - label: "Why Us"
+      url: "why-us.html"
+    - label: "About"
+      url: "index.html#about"
+    - label: "Team"
+      url: "index.html#team"
+  cta_label: "Apply Now →"
+  cta_url: "index.html#apply"
+
+footer:
+  logo_prefix: "CO"
+  logo_suffix: "·WORKER LABS"
+  location: "Silicon Valley"
+  links:
+    - label: "Programs"
+      url: "index.html#programs"
+    - label: "Why Us"
+      url: "why-us.html"
+    - label: "About"
+      url: "index.html#about"
+    - label: "Apply"
+      url: "index.html#apply"
+  copyright: "© 2026 Coworker Labs"

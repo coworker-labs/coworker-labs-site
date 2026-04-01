@@ -1,0 +1,210 @@
+{% extends "_includes/layouts/base.html" %}
+
+{% block title %}{{ homepage.meta.title }}{% endblock %}
+{% block description %}{{ homepage.meta.description }}{% endblock %}
+
+{% block content %}
+
+  <!-- ══════════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-name">{{ homepage.hero.brand_label }}</div>
+      <h1>
+        {{ homepage.hero.heading_line1 }}<br>
+        <span class="line2">{{ homepage.hero.heading_line2 }}</span>
+      </h1>
+      <p class="hero-sub">
+        {{ homepage.hero.subtext }}
+      </p>
+      <div class="hero-actions">
+        <a href="{{ homepage.hero.cta_primary_url }}" class="btn btn-primary">{{ homepage.hero.cta_primary_label }}</a>
+        <a href="{{ homepage.hero.cta_secondary_url }}" class="btn btn-outline">{{ homepage.hero.cta_secondary_label }}</a>
+      </div>
+      <p class="hero-detail">{{ homepage.hero.detail }}</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       THE ADOPTION GAP
+  ══════════════════════════════════════════════════════════ -->
+  <section class="gap-section">
+    <div class="container">
+      <div class="section-label">{{ homepage.adoption_gap.section_label }}</div>
+      <div class="gap-grid">
+        <div class="gap-body">
+          <h2 class="white">{{ homepage.adoption_gap.heading_line1 }}<br>{{ homepage.adoption_gap.heading_line2 }}<br>{{ homepage.adoption_gap.heading_line3 }}</h2>
+          <p style="margin-top:24px">
+            {{ homepage.adoption_gap.body_para1 }}
+          </p>
+          <p>
+            {{ homepage.adoption_gap.body_para2 }}
+          </p>
+          <p class="kicker">{{ homepage.adoption_gap.kicker }}</p>
+        </div>
+        <div class="stats-col">
+          {% for stat in homepage.adoption_gap.stats %}
+          <div class="stat-card">
+            <div class="stat-number">{{ stat.number }}</div>
+            <div>
+              <div class="stat-label">{{ stat.label }}</div>
+              <div class="stat-source">{{ stat.source }}</div>
+            </div>
+          </div>
+          {% endfor %}
+          <p class="muted" style="padding-left:4px">{{ homepage.adoption_gap.stats_footer }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       THE NEXT WAVE
+  ══════════════════════════════════════════════════════════ -->
+  <section class="wave-section">
+    <div class="container">
+      <div class="section-label">{{ homepage.next_wave.section_label }}</div>
+      <h2 class="white">{{ homepage.next_wave.heading }}</h2>
+      <p style="margin-top:24px">
+        {{ homepage.next_wave.body_para1 }}
+      </p>
+      <p>
+        {{ homepage.next_wave.body_para2 }}
+      </p>
+      <div class="window">{{ homepage.next_wave.window_text }}</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       HOW WE'RE DIFFERENT
+  ══════════════════════════════════════════════════════════ -->
+  <section class="diff-section">
+    <div class="container">
+      <div class="section-label">{{ homepage.how_different.section_label }}</div>
+      <h2 class="white">{{ homepage.how_different.heading_line1 }}<br>A <span class="teal">coworker</span>.</h2>
+      <p class="diff-sub" style="margin-top:16px">
+        {{ homepage.how_different.body_para1 }}
+      </p>
+      <p class="diff-sub">
+        {{ homepage.how_different.body_para2 }}
+      </p>
+      <p class="diff-sub" style="color: var(--off-white); font-weight:500;">
+        {{ homepage.how_different.body_para3 }}
+      </p>
+      <div class="pillars">
+        {% for pillar in homepage.how_different.pillars %}
+        <div class="pillar">
+          <h3>{{ pillar.title }}</h3>
+          <p>{{ pillar.body }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       PROGRAMS
+  ══════════════════════════════════════════════════════════ -->
+  <section id="programs">
+    <div class="container">
+      <div class="section-label">{{ homepage.programs.section_label }}</div>
+      <h2 class="white">{{ homepage.programs.heading }}</h2>
+      <div class="programs-grid">
+        {% for card in homepage.programs.cards %}
+        <div class="program-card">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.body }}</p>
+          <div class="program-meta">{{ card.meta }}</div>
+          <a href="{{ card.cta_url }}" class="btn {{ card.cta_style }}">{{ card.cta_label }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       TEAM
+  ══════════════════════════════════════════════════════════ -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="section-label">{{ homepage.team.section_label }}</div>
+      <h2 class="white">{{ homepage.team.heading }}</h2>
+      <p class="team-intro" style="margin-top:16px">
+        {{ homepage.team.intro }}
+      </p>
+      <div class="team-grid">
+        {% for member in homepage.team.members %}
+        <div class="team-card">
+          <div class="team-name">{{ member.name }}</div>
+          <div class="team-org">{{ member.org }}</div>
+        </div>
+        {% endfor %}
+        <div class="team-card" style="border: 1px dashed rgba(0,180,171,0.25); background: transparent;">
+          <div class="team-name" style="color: var(--foot);">More coming</div>
+          <div class="team-org" style="color: var(--foot);">Network growing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOUNDER
+  ══════════════════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">{{ homepage.founder.section_label }}</div>
+      <div class="founder-grid">
+
+        <div class="founder-left">
+          <div class="founder-name">{{ homepage.founder.name }}</div>
+          <div class="founder-title">{{ homepage.founder.title }}</div>
+          <div class="founder-traction">
+            {% for item in homepage.founder.traction %}
+            <div class="traction-item">
+              <strong>{{ item.strong_text }}</strong>{{ item.rest_text }}
+            </div>
+            {% endfor %}
+          </div>
+          <a href="{{ homepage.founder.linkedin_url }}" target="_blank" class="linkedin" style="display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-size:0.88rem;color:var(--teal);">
+            {{ homepage.founder.linkedin_label }}
+          </a>
+        </div>
+
+        <div class="founder-story">
+          <h2 class="white">{{ homepage.founder.story_heading_line1 }}<br>{{ homepage.founder.story_heading_line2 }}</h2>
+          {% for para in homepage.founder.story_paragraphs %}
+          {% if loop.first %}
+          <p style="margin-top:24px"{% if para.highlight %} class="highlight"{% endif %}>
+          {% else %}
+          <p{% if para.highlight %} class="highlight"{% endif %}>
+          {% endif %}
+            {{ para.text }}
+          </p>
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FINAL CTA
+  ══════════════════════════════════════════════════════════ -->
+  <section class="cta-section" id="apply">
+    <h2>{{ homepage.cta.heading }}</h2>
+    <p class="cta-sub">
+      {{ homepage.cta.subtext }}
+    </p>
+    <div class="cta-actions">
+      <a href="{{ homepage.cta.cta_url }}" class="btn btn-primary">{{ homepage.cta.cta_label }}</a>
+    </div>
+    <p class="cta-note" style="margin-top:20px">
+      {{ homepage.cta.note_prefix }}
+      <a href="{{ homepage.cta.waitlist_url }}">{{ homepage.cta.waitlist_label }}</a> {{ homepage.cta.note_mid }}
+      <a href="{{ homepage.cta.enterprise_url }}">{{ homepage.cta.enterprise_label }}</a>
+      {{ homepage.cta.note_suffix }}
+    </p>
+  </section>
+
+{% endblock %}

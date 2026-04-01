@@ -1,0 +1,144 @@
+meta:
+  title: "Coworker Labs — AI Adoption for the World"
+  description: "The world is adopting AI. Most of it is getting it wrong. Coworker Labs connects you to Silicon Valley practitioners building what comes next."
+
+hero:
+  brand_label: "Coworker Labs"
+  heading_line1: "The world is adopting AI."
+  heading_line2: "Most of it is getting it wrong."
+  subtext: "The courses are outdated. The advisory is behind. Coworker Labs connects you to practitioners from Silicon Valley who are building what comes next — so you adopt the right technology, at the right time."
+  cta_primary_label: "Join the First Cohort — April 28 →"
+  cta_primary_url: "#apply"
+  cta_secondary_label: "See all programs"
+  cta_secondary_url: "#programs"
+  detail: "14 hours &nbsp;·&nbsp; $499 &nbsp;·&nbsp; Seats are limited."
+
+adoption_gap:
+  section_label: "The Adoption Gap"
+  heading_line1: "78% of organizations"
+  heading_line2: "use AI. Only 7% have"
+  heading_line3: "made it work."
+  body_para1: "You've tried the tools. Maybe taken a course. You can feel that something is missing — but it's hard to name exactly what."
+  body_para2: "Here's what's missing: the people who actually know what AI can do — and what it can't — are concentrated in a handful of companies in one zip code. The rest of the world is learning from content that was already out of date when it was published."
+  kicker: "This isn't a technology problem. It's a knowledge distribution problem."
+  stats_footer: "The technology moved. Most of the education didn't."
+  stats:
+    - number: "1%"
+      label: "of business leaders say their AI strategy is \"mature.\""
+      source: "McKinsey Superagency in the Workplace, 2025"
+    - number: "95%"
+      label: "of enterprise AI pilots fail to generate measurable business impact."
+      source: "MIT / Fortune, 2025"
+    - number: "4→72%"
+      label: "AI performance on real engineering tasks — in a single year."
+      source: "Stanford HAI AI Index, 2025"
+
+next_wave:
+  section_label: "The Next Wave"
+  heading: "Agentic AI is here. The decisions you make in the next 12 months will define your organization's AI architecture for years."
+  body_para1: "AI has moved from answering questions to taking action. Agentic systems now run workflows, make decisions, and operate autonomously across business functions. This isn't a future trend — it's what's shipping today at companies like Google, Microsoft, and Anthropic."
+  body_para2: "Organizations that build their AI operating layer on current knowledge will have a structural advantage. Those that adopt outdated frameworks — because that's what their training taught them — will spend the next five years catching up."
+  window_text: "The window to get this right is open. It won't stay open."
+
+how_different:
+  section_label: "How We're Different"
+  heading_line1: "Not a school. Not a vendor."
+  heading_line2: "A coworker."
+  body_para1: "A coworker doesn't hand you a textbook. They tell you what's actually working. They help you figure out what to do on Monday. They introduce you to the right people."
+  body_para2: "That's what Coworker Labs is — a team headquartered in Silicon Valley, with direct access to the practitioners building what's next, who work alongside you through the adoption process."
+  body_para3: "The knowledge is current because the people are current. There's no lag between what's shipping and what we teach."
+  pillars:
+    - title: "Current knowledge"
+      body: "Our instructors work at companies building AI right now. Not 2022 AI. Today's AI. What they know, you'll know."
+    - title: "Silicon Valley network"
+      body: "You don't just learn from the valley — you connect to it. The network you build here is as valuable as the skills."
+    - title: "Hands-on, domain-specific"
+      body: "No generic AI theory. Programs are built around your domain — product, operations, marketing, education, and more."
+
+programs:
+  section_label: "Programs"
+  heading: "Four ways to work with us."
+  cards:
+    - title: "Cohort-Based Learning"
+      body: "For professionals who need to understand what AI means for their career — and do something real with it. Hands-on. Domain-specific. Led by practitioners from the companies building AI today."
+      meta: "Next cohort: April 28 &nbsp;·&nbsp; $499 / 14 hours"
+      cta_label: "Apply now →"
+      cta_url: "#apply"
+      cta_style: "btn-primary"
+    - title: "Bring Your Own Project"
+      body: "You have an idea. We help you build it. 1:1 guidance for personal projects and non-technical founders who need engineering support to bring something to life. No generic advice — we work on your thing."
+      meta: "Custom engagement"
+      cta_label: "Get in touch →"
+      cta_url: "#apply"
+      cta_style: "btn-outline"
+    - title: "AI for EdTech"
+      body: "If educators don't understand AI, their students won't either. Those students become the professionals and leaders of the next two decades. The circle stays broken — unless you start with the educators. Faculty training, student programs, and institutional AI policy."
+      meta: "Schools &nbsp;·&nbsp; Colleges &nbsp;·&nbsp; Training Centers &nbsp;·&nbsp; Online / Offline / Hybrid"
+      cta_label: "Get in touch →"
+      cta_url: "#apply"
+      cta_style: "btn-outline"
+    - title: "AI for Enterprises"
+      body: "For mid-market organizations that need an AI strategy, not just AI tools. Team training, adoption roadmaps, and ongoing advisory — from a team that knows what's working at the companies leading the space."
+      meta: "Custom engagement"
+      cta_label: "Talk to us →"
+      cta_url: "#apply"
+      cta_style: "btn-outline"
+
+team:
+  section_label: "The Team"
+  heading: "Built by people inside the AI industry — not observers of it."
+  intro: "The Coworker Labs network includes AI practitioners, researchers, educators, and ML scientists from Silicon Valley's leading companies and institutions. They're not teaching from a curriculum — they're teaching from what they shipped last quarter."
+  members:
+    - name: "Ayan Putatunda"
+      org: "Zendesk"
+    - name: "Prafulla Rawal"
+      org: "Google"
+    - name: "Sid Mathur"
+      org: "Microsoft"
+    - name: "Joydeep Bhattacharyya"
+      org: "AMD"
+    - name: "Hemant Gangolia"
+      org: "Rally Tax"
+    - name: "Deepak Negi"
+      org: "Workday"
+    - name: "Sourav Banerjee"
+      org: "Infosys"
+
+founder:
+  section_label: "Why We Built This"
+  name: "Aparoop Chakraborty"
+  title: "Founder, Coworker Labs"
+  linkedin_url: "https://www.linkedin.com/in/aparoop/"
+  linkedin_label: "↗ linkedin.com/in/aparoop"
+  traction:
+    - strong_text: "AI Advisor"
+      rest_text: " — Dimois Training Center, Riyadh.<br>Shaping Riyadh's first AI-first Training Institute."
+    - strong_text: "First cohort"
+      rest_text: " — April 28, 2026.<br>$499 &nbsp;·&nbsp; 14 hours &nbsp;·&nbsp; Applications open."
+  story_heading_line1: "Two years ago, Aparoop didn't know how to build software."
+  story_heading_line2: "Today he builds AI products. Here's what happened in between."
+  story_paragraphs:
+    - text: "Aparoop Chakraborty is not a software engineer. He never was. But two years ago, he decided that wasn't an excuse to stay on the outside of the most important technology shift of his career."
+      highlight: false
+    - text: "What followed was two years of deliberate immersion. He built a network on LinkedIn — not to broadcast, but to listen. He got into communities where Silicon Valley founders were talking candidly about what was working and what wasn't. He read VC reports that don't reach the public eye — the ones where investors share unfiltered views on where AI is actually going. He showed up to meetups where researchers talked about how the technology was evolving, not how it was being marketed. He followed the podcasts and the accelerators tracking what was being built and what it meant for organizations and professionals who weren't engineers."
+      highlight: false
+    - text: "Every two weeks, the story changed. New benchmarks. New architectures. New products that made the previous ones look like early drafts."
+      highlight: false
+    - text: "The thing that struck him wasn't just how fast AI was moving. It was how far the rest of the world was from seeing it clearly. The gap between what he was learning in those rooms and communities — and what was available in courses, articles, corporate training programs — was enormous. And it was growing."
+      highlight: true
+    - text: "He built products — including this one — with what he learned. Then he built Coworker Labs so you could get there without spending two years figuring out where to look."
+      highlight: false
+
+cta:
+  section_label: ""
+  heading: "The first cohort starts April 28."
+  subtext: "14 hours. $499. Limited seats. Practitioners as instructors. Professionals like you as peers."
+  cta_label: "Apply Now →"
+  cta_url: "mailto:aparoop@coworkerlabs.com?subject=Cohort Application"
+  note_prefix: "Not ready for a cohort?"
+  waitlist_label: "Join the waitlist"
+  waitlist_url: "mailto:aparoop@coworkerlabs.com?subject=Waitlist"
+  note_mid: "for future programs or"
+  enterprise_label: "get in touch"
+  enterprise_url: "mailto:aparoop@coworkerlabs.com?subject=Enterprise Partnership"
+  note_suffix: "about enterprise and institutional partnerships."

@@ -1,0 +1,14 @@
+[build]
+  command   = "pip install -r requirements.txt && python3 build.py"
+  publish   = "_site"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
+
+# Decap CMS: enable Netlify Identity widget on the admin page
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Frame-Options        = "SAMEORIGIN"
+    X-XSS-Protection       = "1; mode=block"
+    X-Content-Type-Options = "nosniff"

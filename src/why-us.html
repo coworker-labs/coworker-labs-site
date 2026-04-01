@@ -1,0 +1,182 @@
+{% extends "_includes/layouts/base.html" %}
+
+{% block title %}{{ why_us.meta.title }}{% endblock %}
+{% block description %}{{ why_us.meta.description }}{% endblock %}
+
+{% block content %}
+
+  <!-- ══════════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════════ -->
+  <section class="hero hero-compact">
+    <div class="container">
+      <div class="section-label">{{ why_us.hero.section_label }}</div>
+      <h1 class="white">
+        {{ why_us.hero.heading_line1 }}<br>
+        <span class="line2">{{ why_us.hero.heading_line2 }}</span>
+      </h1>
+      <p class="hero-sub">
+        {{ why_us.hero.subtext }}
+      </p>
+      <a href="{{ why_us.hero.cta_url }}" class="btn btn-primary">{{ why_us.hero.cta_label }}</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       THE REALITY CHECK
+  ══════════════════════════════════════════════════════════ -->
+  <section class="reality">
+    <div class="container">
+      <div class="section-label">{{ why_us.reality_check.section_label }}</div>
+      <h2 class="white" style="margin-bottom:40px">
+        {{ why_us.reality_check.heading_line1 }}<br>{{ why_us.reality_check.heading_line2 }}
+      </h2>
+      <div class="reality-grid">
+
+        <!-- Their path -->
+        <div class="reality-col">
+          <h3 class="grey">{{ why_us.reality_check.col_them_title }}</h3>
+          <div class="flow-steps">
+            {% for step in why_us.reality_check.them_steps %}
+            <div class="flow-step">
+              <div class="step-icon {{ step.icon_style }}">{{ step.icon }}</div>
+              <div class="step-text">
+                <strong{% if step.strong_color is defined and step.strong_color %} class="{{ step.strong_color }}"{% endif %}>{{ step.strong_text }}</strong>
+                <div class="sub">{{ step.sub_text }}</div>
+              </div>
+            </div>
+            {% if not loop.last %}<div class="divider-label">↓</div>{% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+        <!-- Coworker path -->
+        <div class="reality-col">
+          <h3 class="teal">{{ why_us.reality_check.col_us_title }}</h3>
+          <div class="flow-steps">
+            {% for step in why_us.reality_check.us_steps %}
+            <div class="flow-step">
+              <div class="step-icon {{ step.icon_style }}">{{ step.icon }}</div>
+              <div class="step-text">
+                <strong{% if step.strong_color is defined and step.strong_color %} class="{{ step.strong_color }}"{% endif %}>{{ step.strong_text }}</strong>
+                <div class="sub">{{ step.sub_text }}</div>
+              </div>
+            </div>
+            {% if not loop.last %}<div class="divider-label">↓</div>{% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       COMPARISON TABLE
+  ══════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="container">
+      <div class="section-label">{{ why_us.comparison_table.section_label }}</div>
+      <h2 class="white" style="margin-bottom:12px">{{ why_us.comparison_table.heading }}</h2>
+      <p class="grey" style="margin-bottom:0;font-size:0.95rem">{{ why_us.comparison_table.subtext }}</p>
+
+      <div class="compare-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th class="th-them">{{ why_us.comparison_table.col_1_header }}</th>
+              <th class="th-them">{{ why_us.comparison_table.col_2_header }}<br><span style="font-weight:400;font-size:0.75rem">{{ why_us.comparison_table.col_2_subheader }}</span></th>
+              <th class="th-them">{{ why_us.comparison_table.col_3_header }}<br><span style="font-weight:400;font-size:0.75rem">{{ why_us.comparison_table.col_3_subheader }}</span></th>
+              <th class="th-us">{{ why_us.comparison_table.col_4_header }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in why_us.comparison_table.rows %}
+            <tr>
+              <td>{{ row.category }}</td>
+              <td class="td-them">{% if row.col1_prefix == 'check' %}<span class="check">✓</span>{% elif row.col1_prefix == 'cross' %}<span class="cross">✕</span>{% elif row.col1_prefix == 'neutral' %}<span class="neutral">~</span>{% endif %}{{ row.col1 }}</td>
+              <td class="td-them">{% if row.col2_prefix == 'check' %}<span class="check">✓</span>{% elif row.col2_prefix == 'cross' %}<span class="cross">✕</span>{% elif row.col2_prefix == 'neutral' %}<span class="neutral">~</span>{% endif %}{{ row.col2 }}</td>
+              <td class="td-them">{% if row.col3_prefix == 'check' %}<span class="check">✓</span>{% elif row.col3_prefix == 'cross' %}<span class="cross">✕</span>{% elif row.col3_prefix == 'neutral' %}<span class="neutral">~</span>{% endif %}{{ row.col3 }}</td>
+              <td class="td-us">{% if row.col4_prefix == 'check' %}<span class="check">✓</span>{% elif row.col4_prefix == 'cross' %}<span class="cross">✕</span>{% elif row.col4_prefix == 'neutral' %}<span class="neutral">~</span>{% endif %}{{ row.col4 }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       THE MISSING LAYER
+  ══════════════════════════════════════════════════════════ -->
+  <section class="missing">
+    <div class="container">
+      <div class="section-label">{{ why_us.missing_layer.section_label }}</div>
+      <h2 class="white">
+        {{ why_us.missing_layer.heading_line1 }}<br>
+        {{ why_us.missing_layer.heading_line2 }}
+      </h2>
+      <div class="missing-grid">
+        {% for card in why_us.missing_layer.cards %}
+        <div class="missing-card">
+          <h3>{{ card.title }}</h3>
+          {% for para in card.paragraphs %}
+          <p>{{ para }}</p>
+          {% endfor %}
+          {% if card.quote %}
+          <div class="quote">{{ card.quote }}</div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       THE FOUNDER'S LENS
+  ══════════════════════════════════════════════════════════ -->
+  <section class="founder-lens">
+    <div class="container">
+      <div class="section-label">{{ why_us.founder_lens.section_label }}</div>
+      <h2 class="white">
+        {{ why_us.founder_lens.heading }}
+      </h2>
+      <div class="lenses">
+        {% for card in why_us.founder_lens.cards %}
+        <div class="lens-card">
+          <div class="lens-num">{{ card.num }}</div>
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.body }}</p>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="lens-outcome">
+        <div class="lens-outcome-icon">→</div>
+        <div>
+          <h3>{{ why_us.founder_lens.outcome_heading }}</h3>
+          <p>{{ why_us.founder_lens.outcome_para1 }}</p>
+          <p style="margin-top:12px">{{ why_us.founder_lens.outcome_para2 }}</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       CTA
+  ══════════════════════════════════════════════════════════ -->
+  <section class="cta-section" id="apply">
+    <h2>{{ why_us.cta.heading }}</h2>
+    <p>{{ why_us.cta.subtext }}</p>
+    <a href="{{ why_us.cta.cta_url }}" class="btn btn-primary">
+      {{ why_us.cta.cta_label }}
+    </a>
+    <p style="margin-top:20px;font-size:0.82rem;color:var(--foot)">
+      {{ why_us.cta.note_text }} <a href="mailto:{{ why_us.cta.email }}">{{ why_us.cta.email }}</a>
+      &nbsp;·&nbsp; <a href="{{ why_us.cta.linkedin_url }}" target="_blank">{{ why_us.cta.linkedin_label }}</a>
+    </p>
+  </section>
+
+{% endblock %}
