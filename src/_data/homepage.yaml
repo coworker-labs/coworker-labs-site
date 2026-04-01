@@ -1,6 +1,6 @@
 meta:
   title: "Coworker Labs — AI Adoption for the World"
-  description: "The world is adopting AI. Most of it is getting it wrong. Coworker Labs connects you to Silicon Valley practitioners building what comes next."
+  description: "The world is adopting AI. Most are getting a part of the puzzle. Coworker Labs connects you to Silicon Valley practitioners building what comes next."
 
 hero:
   brand_label: "Coworker Labs"
@@ -19,7 +19,7 @@ adoption_gap:
   heading_line2: "use AI. Only 7% have"
   heading_line3: "made it work."
   body_para1: "You've tried the tools. Maybe taken a course. You can feel that something is missing — but it's hard to name exactly what."
-  body_para2: "Here's what's missing: the people who actually know what AI can do — and what it can't — are concentrated in a handful of companies in one zip code. The rest of the world is learning from content that was already out of date when it was published."
+  body_para2: "Here's what's missing: the people who actually know what AI can do — and what it can't — are concentrated in a handful of companies. The rest of the world is learning from content that was already out of date when it was published."
   kicker: "This isn't a technology problem. It's a knowledge distribution problem."
   stats_footer: "The technology moved. Most of the education didn't."
   stats:
@@ -42,14 +42,14 @@ next_wave:
 
 how_different:
   section_label: "How We're Different"
-  heading_line1: "Not a school. Not a vendor."
+  heading_line1: "Not a school. Not a co-sell hub."
   heading_line2: "A coworker."
-  body_para1: "A coworker doesn't hand you a textbook. They tell you what's actually working. They help you figure out what to do on Monday. They introduce you to the right people."
+  body_para1: "A coworker doesn't hand you a textbook. They tell you what's actually working. They help you figure out what to do on Monday. They help you ."
   body_para2: "That's what Coworker Labs is — a team headquartered in Silicon Valley, with direct access to the practitioners building what's next, who work alongside you through the adoption process."
   body_para3: "The knowledge is current because the people are current. There's no lag between what's shipping and what we teach."
   pillars:
     - title: "Current knowledge"
-      body: "Our instructors work at companies building AI right now. Not 2022 AI. Today's AI. What they know, you'll know."
+      body: "Our instructors work at companies building AI right now. Not 2025 AI. Today's AI which changes every month. What they know, you'll know."
     - title: "Silicon Valley network"
       body: "You don't just learn from the valley — you connect to it. The network you build here is as valuable as the skills."
     - title: "Hands-on, domain-specific"
@@ -57,7 +57,7 @@ how_different:
 
 programs:
   section_label: "Programs"
-  heading: "Four ways to work with us."
+  heading: "We have two offerings."
   cards:
     - title: "Cohort-Based Learning"
       body: "For professionals who need to understand what AI means for their career — and do something real with it. Hands-on. Domain-specific. Led by practitioners from the companies building AI today."
