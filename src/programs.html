@@ -93,22 +93,6 @@
           <p style="margin-top:16px">{{ tab.advisory_para3 }}</p>
         </div>
         {% else %}
-        <!-- Abstraction block -->
-        <div class="abstraction">
-          <h3>{{ tab.abstraction_heading }}</h3>
-          {% if tab.abstraction_para1 %}<p>{{ tab.abstraction_para1 }}</p>{% endif %}
-          {% if tab.abstraction_para2 %}<p>{{ tab.abstraction_para2 }}</p>{% endif %}
-          <div class="shift-examples">
-            {% for ex in tab.shift_examples %}
-            <div class="shift-row">
-              <div class="shift-before"><span>{{ ex.before_label }}</span>{{ ex.before_text }}</div>
-              <div class="shift-after"><span>{{ ex.after_label }}</span>{{ ex.after_text }}</div>
-            </div>
-            {% endfor %}
-          </div>
-          {% if tab.abstraction_para3 %}<p style="margin-top:20px">{{ tab.abstraction_para3 }}</p>{% endif %}
-        </div>
-
         <!-- Curriculum block (Professionals only) -->
         {% if tab.curriculum is defined %}
         <div class="curriculum-block">
