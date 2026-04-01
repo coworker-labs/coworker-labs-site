@@ -18,6 +18,7 @@ PAGES = [
     ("index.html",   "index.html"),
     ("why-us.html",  "why-us.html"),
     ("programs.html","programs.html"),
+    ("about.html",   "about.html"),
 ]
 
 # ── helpers ──────────────────────────────────────────────────────────────────
@@ -46,6 +47,7 @@ def build():
         "homepage": load_yaml("homepage.yaml"),
         "why_us":   load_yaml("why_us.yaml"),
         "programs": load_yaml("programs.yaml"),
+        "about":    load_yaml("about.yaml"),
     }
 
     # Jinja2 env — loader points at src/ so {% extends %} paths work as written

@@ -18,9 +18,7 @@ nav:
     - label: "Why Us"
       url: "why-us.html"
     - label: "About"
-      url: "index.html#about"
-    - label: "Team"
-      url: "index.html#team"
+      url: "about.html"
   cta_label: "Apply Now →"
   cta_url: "index.html#apply"
 
