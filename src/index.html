@@ -134,16 +134,13 @@
         {{ homepage.team.intro }}
       </p>
       <div class="team-grid">
-        {% for member in homepage.team.members %}
+        {% for cat in homepage.team.categories %}
         <div class="team-card">
-          <div class="team-name">{{ member.name }}</div>
-          <div class="team-org">{{ member.org }}</div>
+          <div class="team-count">{{ cat.count }}</div>
+          <div class="team-name">{{ cat.label }}</div>
+          <div class="team-org">{{ cat.description }}</div>
         </div>
         {% endfor %}
-        <div class="team-card" style="border: 1px dashed rgba(0,180,171,0.25); background: transparent;">
-          <div class="team-name" style="color: var(--foot);">More coming</div>
-          <div class="team-org" style="color: var(--foot);">Network growing</div>
-        </div>
       </div>
     </div>
   </section>
@@ -159,29 +156,14 @@
         <div class="founder-left">
           <div class="founder-name">{{ homepage.founder.name }}</div>
           <div class="founder-title">{{ homepage.founder.title }}</div>
-          <div class="founder-traction">
-            {% for item in homepage.founder.traction %}
-            <div class="traction-item">
-              <strong>{{ item.strong_text }}</strong>{{ item.rest_text }}
-            </div>
-            {% endfor %}
-          </div>
-          <a href="{{ homepage.founder.linkedin_url }}" target="_blank" class="linkedin" style="display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-size:0.88rem;color:var(--teal);">
+          <a href="{{ homepage.founder.linkedin_url }}" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-size:0.88rem;color:var(--teal);">
             {{ homepage.founder.linkedin_label }}
           </a>
         </div>
 
         <div class="founder-story">
-          <h2 class="white">{{ homepage.founder.story_heading_line1 }}<br>{{ homepage.founder.story_heading_line2 }}</h2>
-          {% for para in homepage.founder.story_paragraphs %}
-          {% if loop.first %}
-          <p style="margin-top:24px"{% if para.highlight %} class="highlight"{% endif %}>
-          {% else %}
-          <p{% if para.highlight %} class="highlight"{% endif %}>
-          {% endif %}
-            {{ para.text }}
-          </p>
-          {% endfor %}
+          <h2 class="white">{{ homepage.founder.story_heading }}</h2>
+          <p style="margin-top:24px">{{ homepage.founder.story_text }}</p>
         </div>
 
       </div>
@@ -193,18 +175,12 @@
   ══════════════════════════════════════════════════════════ -->
   <section class="cta-section" id="apply">
     <h2>{{ homepage.cta.heading }}</h2>
-    <p class="cta-sub">
-      {{ homepage.cta.subtext }}
-    </p>
+    <p class="cta-sub">{{ homepage.cta.subtext }}</p>
     <div class="cta-actions">
-      <a href="{{ homepage.cta.cta_url }}" class="btn btn-primary">{{ homepage.cta.cta_label }}</a>
+      <a href="{{ homepage.cta.cta_primary_url }}" class="btn btn-primary">{{ homepage.cta.cta_primary_label }}</a>
+      <a href="{{ homepage.cta.cta_secondary_url }}" class="btn btn-outline">{{ homepage.cta.cta_secondary_label }}</a>
     </div>
-    <p class="cta-note" style="margin-top:20px">
-      {{ homepage.cta.note_prefix }}
-      <a href="{{ homepage.cta.waitlist_url }}">{{ homepage.cta.waitlist_label }}</a> {{ homepage.cta.note_mid }}
-      <a href="{{ homepage.cta.enterprise_url }}">{{ homepage.cta.enterprise_label }}</a>
-      {{ homepage.cta.note_suffix }}
-    </p>
+    <p class="cta-note" style="margin-top:20px">{{ homepage.cta.note }}</p>
   </section>
 
 {% endblock %}
