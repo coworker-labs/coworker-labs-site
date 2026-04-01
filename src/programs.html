@@ -48,6 +48,16 @@
           </div>
         </div>
 
+        {% if tab.framework is defined %}
+        <!-- Coworker Framework block (Organizations only) -->
+        <div class="framework-block">
+          <div class="section-label">{{ tab.framework.section_label }}</div>
+          <h3 class="white">{{ tab.framework.heading }}</h3>
+          <div class="framework-narrative">{{ tab.framework.narrative }}</div>
+          <p class="framework-note">{{ tab.framework.note }}</p>
+        </div>
+        {% endif %}
+
         <div class="value-table-wrap">
           <table>
             <thead>
