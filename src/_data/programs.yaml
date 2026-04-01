@@ -1,171 +1,250 @@
 meta:
-  title: "Programs — Coworker Labs"
-  description: "Cohort-based learning for professionals who want to leave as builders. Independent AI consulting for organizations that need a strategy they can trust."
-
+  title: Programs — Coworker Labs
+  description: Cohort-based learning for professionals who want to leave as
+    builders. Independent AI consulting for organizations that need a strategy
+    they can trust.
 hero:
-  section_label: "Programs"
-  heading_line1: "Two programs."
-  heading_line2: "Pick yours."
-  subtext: "Cohort-based learning for professionals. Independent AI consulting for organizations. Both built on the same foundation — Silicon Valley practitioners, current knowledge, no vendor bias."
-
+  section_label: Programs
+  heading_line1: Two programs.
+  heading_line2: Pick yours.
+  subtext: Cohort-based hands-on learning for professionals and independent
+    consulting for organizations. Both built on the same foundation — how can we
+    use AI as a coworker.
 tabs:
-  - id: "professionals"
-    label: "Professionals"
-    sub: "Cohort-based learning"
-    fear_icon: "🧭"
-    fear_heading: "You've done the courses. You still don't know what to do on Monday."
-    fear_body: "The courses are generic, dated, and built for engineers — not for you. You've watched YouTube. You've done Coursera. You can talk about AI in a meeting. But you can't point to anything you've built with it. The gap between knowing about AI and building with AI is the gap no one is closing.<br><br><strong>That's the gap Coworker Labs is built for.</strong>"
-    table_headers:
-      col_feeling: "What you're feeling"
-      col_shift: "The shift you need to make"
-      col_us: "What Coworker Labs gives you"
-      col_leave: "What you leave with"
+  - sub: Cohort-based learning
     value_table:
-      - category: "Career risk"
-        feeling: "The people who 'get AI' are pulling ahead. I don't know how to close the gap."
-        shift: "Stop learning about AI. Start building with it — in your domain, in your role."
-        us: "Silicon Valley practitioners who run your cohort and support your project in your specific function"
-        leave: "A deployed AI project in your domain — proof you can build, not just talk"
-      - category: "Knowledge gap"
-        feeling: "The courses are too generic. I don't know what AI means for my role specifically."
-        shift: "Generic AI theory → domain-specific, hands-on capability"
-        us: "Cohort built around your function — product, ops, sales, finance, marketing, education"
-        leave: "The specific AI moves that create leverage in your role — not abstract theory"
-      - category: "Building capability"
-        feeling: "I want to build with AI but I don't know where to start or what's worth learning."
-        shift: "Passive learning → active building with a structured plan and educator support"
-        us: "A personalized learning plan + hands-on sessions + educator support as you build"
-        leave: "The ability to build and deploy AI tools in your area — starting during the cohort"
-      - category: "Staying current"
-        feeling: "AI changes constantly. I can't keep up on my own."
-        shift: "Learning alone → being part of a live Bay Area AI network"
-        us: "Lifelong access to a private Silicon Valley AI community of practitioners and researchers"
-        leave: "A Bay Area network that keeps you current — and opens doors long after the cohort ends"
-      - category: "Network"
-        feeling: "My network doesn't include the people shaping AI."
-        shift: "Professional network → Silicon Valley AI community"
-        us: "Access to MAG7 practitioners and Bay Area AI leaders you couldn't reach on your own"
-        leave: "Connections that create career opportunities in the Bay Area and beyond"
+      - category: Career risk
+        feeling: The people who 'get AI' are pulling ahead. I don't know how to close
+          the gap.
+        shift: Stop learning about AI. Start building with it — in your domain, in your
+          role.
+        us: Silicon Valley practitioners who run your cohort and support your project in
+          your specific function
+        leave: A deployed AI project in your domain — proof you can build, not just talk
+      - category: Knowledge gap
+        feeling: The courses are too generic. I don't know what AI means for my role
+          specifically.
+        shift: Generic AI theory → domain-specific, hands-on capability
+        us: Cohort built around your function — product, ops, sales, finance, marketing,
+          education
+        leave: The specific AI moves that create leverage in your role — not abstract
+          theory
+      - category: Building capability
+        feeling: I want to build with AI but I don't know where to start or what's worth
+          learning.
+        shift: Passive learning → active building with a structured plan and educator
+          support
+        us: A personalized learning plan + hands-on sessions + educator support as you
+          build
+        leave: The ability to build and deploy AI tools in your area — starting during
+          the cohort
+      - category: Staying current
+        feeling: AI changes constantly. I can't keep up on my own.
+        shift: Learning alone → being part of a live Bay Area AI network
+        us: Lifelong access to a private Silicon Valley AI community of practitioners
+          and researchers
+        leave: A Bay Area network that keeps you current — and opens doors long after
+          the cohort ends
+      - category: Network
+        feeling: My network doesn't include the people shaping AI.
+        shift: Professional network → Silicon Valley AI community
+        us: Access to MAG7 practitioners and Bay Area AI leaders you couldn't reach on
+          your own
+        leave: Connections that create career opportunities in the Bay Area and beyond
+    shift_examples:
+      - before_label: Before
+        before_text: I am a data analyst
+        after_label: After
+        after_text: I manage the data infrastructure supporting $5M in delivery — and
+          I'm building the reporting agent
+      - before_label: Before
+        before_text: I am a project manager
+        after_label: After
+        after_text: I manage a $1M project portfolio. I built our Procurement Agent.
+          Delivery time down 40%.
+      - before_label: Before
+        before_text: I work in marketing
+        after_label: After
+        after_text: I manage a $1M marketing budget and I built our GTM automation tool
+      - before_label: Before
+        before_text: I am a consultant
+        after_label: After
+        after_text: I deliver $1M in client outcomes at 20% lower cost — using AI I
+          built myself
+    fear_icon: 🧭
+    abstraction_heading: Every professional leaves as a builder.
+    cta_strip_sub: 14 hours &nbsp;·&nbsp; $499 (introductory) &nbsp;·&nbsp; Limited
+      seats &nbsp;·&nbsp; Silicon Valley practitioners as instructors
+    cta_strip_heading: Cohort-Based Learning — April 28, 2026
+    fear_body: The courses are generic, dated, and built for engineers — not for
+      you. You've watched YouTube. You've done Coursera. You can talk about AI
+      in a meeting. But you can't point to anything you've built with it. The
+      gap between knowing about AI and building with AI is the gap no one is
+      closing.<br><br><strong>That's the gap Coworker Labs is built
+      for.</strong>
+    fear_heading: You've done the courses. You still don't know what to do on Monday.
+    label: Professionals
+    table_headers:
+      col_feeling: What you're feeling
+      col_shift: The shift you need to make
+      col_us: What Coworker Labs gives you
+      col_leave: What you leave with
+    abstraction_para1: Not just someone who understands AI — someone who has shipped
+      something real during the cohort. A deployed project. An agentic AI tool.
+      Something in your domain you can point to.
+    cta_strip_url: index.html#apply
+    abstraction_para2: <strong>Skill is what you do. Value is what you're
+      responsible for.</strong> AI amplifies value. It commoditizes skill. The
+      professionals who stay ahead are the ones who can articulate their value
+      at a higher level — and build with AI to deliver it.
+    abstraction_para3: Coworker Labs is where that shift happens — not in theory,
+      but in practice, during four weeks of hands-on building with Silicon
+      Valley practitioners alongside you.
     curriculum:
-      section_label: "Cohort 1 — April 28, 2026"
-      heading: "Step into the World of AI"
-      subheading: "Four weeks. Four capstone projects. Silicon Valley practitioners in every session."
+      heading: Step into the World of AI
+      time_label: Time commitment
+      subheading: Four weeks. Four capstone projects. Silicon Valley practitioners in
+        every session.
+      time_detail: 16 hours of live classes &nbsp;·&nbsp; weekly activities
+      community_note: Every graduate joins a private Bay Area AI community —
+        practitioners, educators, and researchers from Silicon Valley. Lifelong
+        access. Your network in the Bay.
+      not_for_label: This cohort is not for everyone.
+      not_for_note: Built for professionals at the boundary — not for engineers or
+        advanced AI users.
+      coming_soon: Cohort 2 — Advanced track &nbsp;·&nbsp; Build your personal
+        assistant &nbsp;·&nbsp; Coming soon
+      section_label: Cohort 1 — April 28, 2026
       weeks:
         - number: "01"
-          title: "Fundamentals of AI & Prompt Engineering"
-          instructor: "Prafulla Rawal · Google"
-          project_label: "Capstone"
-          project: "Build your prompt"
-          project_detail: "Design prompts that solve a real problem in your actual workflow — not a generic demo."
+          title: Fundamentals of AI & Prompt Engineering
+          instructor: Prafulla Rawal · Google
+          project_label: Capstone
+          project: Build your prompt
+          project_detail: Design prompts that solve a real problem in your actual workflow
+            — not a generic demo.
         - number: "02"
-          title: "Understanding Product Value"
-          instructor: "Aparoop & Prafulla Rawal"
-          project_label: "Capstone"
-          project: "Build your product vision"
-          project_detail: "Define an AI initiative in your area of work — a real use case you could take back to your organization."
+          title: Understanding Product Value
+          instructor: Aparoop & Prafulla Rawal
+          project_label: Capstone
+          project: Build your product vision
+          project_detail: Define an AI initiative in your area of work — a real use case
+            you could take back to your organization.
         - number: "03"
-          title: "Build Your Website"
-          instructor: "Ayan Putatunda · Zendesk"
-          project_label: "Capstone"
-          project: "Build your website"
-          project_detail: "Build and deploy your own website during the week. No code required. Live, deployed product."
+          title: Build Your Website
+          instructor: Ayan Putatunda · Zendesk
+          project_label: Capstone
+          project: Build your website
+          project_detail: Build and deploy your own website during the week. No code
+            required. Live, deployed product.
         - number: "04"
-          title: "Bring Your Own Project"
-          instructor: "Aparoop & Ayan Putatunda"
-          project_label: "Capstone"
-          project: "Build the PRD"
-          project_detail: "Define your own AI project and write a full Product Requirements Document. Present to the cohort."
-      time_label: "Time commitment"
-      time_detail: "16 hours of live classes &nbsp;·&nbsp; weekly activities"
-      community_note: "Every graduate joins a private Bay Area AI community — practitioners, educators, and researchers from Silicon Valley. Lifelong access. Your network in the Bay."
-      not_for_label: "This cohort is not for everyone."
-      not_for_note: "Built for professionals at the boundary — not for engineers or advanced AI users."
-      coming_soon: "Cohort 2 — Advanced track &nbsp;·&nbsp; Build your personal assistant &nbsp;·&nbsp; Coming soon"
-    abstraction_heading: "Every professional leaves as a builder."
-    abstraction_para1: "Not just someone who understands AI — someone who has shipped something real during the cohort. A deployed project. An agentic AI tool. Something in your domain you can point to."
-    abstraction_para2: "<strong>Skill is what you do. Value is what you're responsible for.</strong> AI amplifies value. It commoditizes skill. The professionals who stay ahead are the ones who can articulate their value at a higher level — and build with AI to deliver it."
-    abstraction_para3: "Coworker Labs is where that shift happens — not in theory, but in practice, during four weeks of hands-on building with Silicon Valley practitioners alongside you."
-    shift_examples:
-      - before_label: "Before"
-        before_text: "I am a data analyst"
-        after_label: "After"
-        after_text: "I manage the data infrastructure supporting $5M in delivery — and I'm building the reporting agent"
-      - before_label: "Before"
-        before_text: "I am a project manager"
-        after_label: "After"
-        after_text: "I manage a $1M project portfolio. I built our Procurement Agent. Delivery time down 40%."
-      - before_label: "Before"
-        before_text: "I work in marketing"
-        after_label: "After"
-        after_text: "I manage a $1M marketing budget and I built our GTM automation tool"
-      - before_label: "Before"
-        before_text: "I am a consultant"
-        after_label: "After"
-        after_text: "I deliver $1M in client outcomes at 20% lower cost — using AI I built myself"
-    cta_strip_heading: "Cohort-Based Learning — April 28, 2026"
-    cta_strip_sub: "14 hours &nbsp;·&nbsp; $499 (introductory) &nbsp;·&nbsp; Limited seats &nbsp;·&nbsp; Silicon Valley practitioners as instructors"
-    cta_strip_label: "Apply Now →"
-    cta_strip_url: "index.html#apply"
-    cta_strip_style: "btn-primary"
-
-  - id: "organizations"
-    label: "Organizations"
-    sub: "AI Transformational Consultancy"
-    fear_icon: "🏢"
-    fear_heading: "Your teams are subscribed to AI tools. The coordination tax is unchanged."
-    fear_body: "Cross-functional teams spend 60% of their day on coordination — email, follow-ups, status checks, waiting for responses. Not because people aren't capable. Because the system demands it.<br><br>Most organizations know they need AI. They've subscribed to the tools, engaged advisors, built pilots. The coordination tax remains. Most AI strategy doesn't address the right layer.<br><br><strong>The question isn't whether to adopt AI. It's where to start.</strong>"
-    framework:
-      section_label: "The Coworker Framework"
-      heading: "Where do we start?"
-      narrative: "Cross-functional teams spend 60% of their day on coordination — not strategy, not delivery. Email, follow-ups, status checks, waiting. The work of managing handoffs between people.<br><br>The Coworker Framework maps where that coordination tax lives in your organization and shows leaders exactly where agent-to-agent AI can eliminate it."
-      note: "The framework is the starting point of every engagement. Book a free 20-minute discovery call to walk through it."
-    table_headers:
-      col_feeling: "What you're facing"
-      col_shift: "What's getting in the way"
-      col_us: "What Coworker Labs provides"
-      col_leave: "What changes"
+          title: Bring Your Own Project
+          instructor: Aparoop & Ayan Putatunda
+          project_label: Capstone
+          project: Build the PRD
+          project_detail: Define your own AI project and write a full Product Requirements
+            Document. Present to the cohort.
+    id: professionals
+    cta_strip_style: btn-primary
+    cta_strip_label: Apply Now →
+  - sub: AI Transformational Consultancy
     value_table:
-      - category: "AI strategy"
-        feeling: "We need an AI strategy that reflects where the market is heading — not 18 months ago"
-        shift: "Advisors who are credentialed but not current. Recommendations shaped by vendor incentives."
-        us: "Independent advisory — no vendor relationships, no co-selling. Our advice has one incentive: your outcome."
-        leave: "A strategy built on current knowledge — not the version of AI your SI learned when they got certified"
-      - category: "Team capability"
-        feeling: "Our teams are using AI tools but not getting meaningful outcomes"
-        shift: "Generic training that teaches AI in the abstract — not in the context of your operations"
-        us: "Team training from practitioners who understand both the technology and how organizations actually deploy it"
-        leave: "Teams that can identify and build AI use cases in their specific function — not just talk about AI"
-      - category: "Advisory trust"
-        feeling: "We're not sure our advisors are recommending what's best for us vs. their quota"
-        shift: "Advisors with co-selling agreements and vendor partnerships that shape recommendations"
-        us: "We don't co-sell. We have no vendor relationships. We have one incentive: your outcome."
-        leave: "Advisory you can trust — with a clear line of sight into why we recommend what we recommend"
-      - category: "Knowledge currency"
-        feeling: "Agentic AI is reshaping operations. We don't know what it means for us."
-        shift: "Advisors who aren't current enough to connect macro AI trends to your operational context"
-        us: "Practitioners from MAG7 and top-tier SaaS who see what's shipping and what it means for your functions"
-        leave: "An AI strategy that accounts for where the technology is going — not just where it is today"
-      - category: "Pilot to production"
-        feeling: "We've started AI pilots. Most of them are stalled."
-        shift: "Pilots designed for technology — not for the organizational conditions required to make them work"
-        us: "Advisory that accounts for organizational structure and what it actually takes to move AI from pilot to production"
-        leave: "Fewer failed pilots. More production deployments. A team that knows how to get AI to land."
-    advisory_heading: "On AI Transformational Consultancy."
-    advisory_para1: "The AI advisory market has a conflict-of-interest problem. Every major consulting firm, SI, and advisory practice is embedded in a web of vendor relationships and incentive structures that shape — consciously or not — what they recommend."
-    advisory_para2: "This isn't a criticism of those firms. It's a structural reality. When your advisor co-sells with the platform they're recommending, the recommendation is compromised. When their team was certified on tools that were current 18 months ago, the strategy reflects that."
-    advisory_statement: "We provide independent advisory. We don't co-sell."
-    advisory_para3: "Our network is connected to the frontier of AI development. Our incentive is your outcome. That's the advisory relationship that small and mid-market organizations actually need — and that the market isn't consistently delivering."
-    cta_strip_heading: "AI Transformational Consultancy"
-    cta_strip_sub: "Free 20-min discovery call &nbsp;·&nbsp; $199/hr &nbsp;·&nbsp; Long-term engagements by scope"
-    cta_strip_label: "Book a Discovery Call →"
-    cta_strip_url: "mailto:aparoop@coworkerlabs.com?subject=Discovery Call"
-    cta_strip_style: "btn-primary"
-
+      - category: AI strategy
+        feeling: We need an AI strategy that reflects where the market is heading — not
+          18 months ago
+        shift: Advisors who are credentialed but not current. Recommendations shaped by
+          vendor incentives.
+        us: "Independent advisory — no vendor relationships, no co-selling. Our advice
+          has one incentive: your outcome."
+        leave: A strategy built on current knowledge — not the version of AI your SI
+          learned when they got certified
+      - category: Team capability
+        feeling: Our teams are using AI tools but not getting meaningful outcomes
+        shift: Generic training that teaches AI in the abstract — not in the context of
+          your operations
+        us: Team training from practitioners who understand both the technology and how
+          organizations actually deploy it
+        leave: Teams that can identify and build AI use cases in their specific function
+          — not just talk about AI
+      - category: Advisory trust
+        feeling: We're not sure our advisors are recommending what's best for us vs.
+          their quota
+        shift: Advisors with co-selling agreements and vendor partnerships that shape
+          recommendations
+        us: "We don't co-sell. We have no vendor relationships. We have one incentive:
+          your outcome."
+        leave: Advisory you can trust — with a clear line of sight into why we recommend
+          what we recommend
+      - category: Knowledge currency
+        feeling: Agentic AI is reshaping operations. We don't know what it means for us.
+        shift: Advisors who aren't current enough to connect macro AI trends to your
+          operational context
+        us: Practitioners from MAG7 and top-tier SaaS who see what's shipping and what
+          it means for your functions
+        leave: An AI strategy that accounts for where the technology is going — not just
+          where it is today
+      - category: Pilot to production
+        feeling: We've started AI pilots. Most of them are stalled.
+        shift: Pilots designed for technology — not for the organizational conditions
+          required to make them work
+        us: Advisory that accounts for organizational structure and what it actually
+          takes to move AI from pilot to production
+        leave: Fewer failed pilots. More production deployments. A team that knows how
+          to get AI to land.
+    fear_icon: 🏢
+    advisory_statement: We provide independent advisory. We don't co-sell.
+    cta_strip_sub: Free 20-min discovery call &nbsp;·&nbsp; $199/hr &nbsp;·&nbsp;
+      Long-term engagements by scope
+    advisory_para1: The AI advisory market has a conflict-of-interest problem. Every
+      major consulting firm, SI, and advisory practice is embedded in a web of
+      vendor relationships and incentive structures that shape — consciously or
+      not — what they recommend.
+    advisory_para2: This isn't a criticism of those firms. It's a structural
+      reality. When your advisor co-sells with the platform they're
+      recommending, the recommendation is compromised. When their team was
+      certified on tools that were current 18 months ago, the strategy reflects
+      that.
+    cta_strip_heading: AI Transformational Consultancy
+    advisory_para3: Our network is connected to the frontier of AI development. Our
+      incentive is your outcome. That's the advisory relationship that small and
+      mid-market organizations actually need — and that the market isn't
+      consistently delivering.
+    fear_body: Cross-functional teams spend 60% of their day on coordination —
+      email, follow-ups, status checks, waiting for responses. Not because
+      people aren't capable. Because the system demands it.<br><br>Most
+      organizations know they need AI. They've subscribed to the tools, engaged
+      advisors, built pilots. The coordination tax remains. Most AI strategy
+      doesn't address the right layer.<br><br><strong>The question isn't whether
+      to adopt AI. It's where to start.</strong>
+    fear_heading: Your teams are subscribed to AI tools. The coordination tax is unchanged.
+    label: Organizations
+    table_headers:
+      col_feeling: What you're facing
+      col_shift: What's getting in the way
+      col_us: What Coworker Labs provides
+      col_leave: What changes
+    cta_strip_url: mailto:aparoop@coworkerlabs.com?subject=Discovery Call
+    id: organizations
+    cta_strip_style: btn-primary
+    advisory_heading: On AI Transformational Consultancy.
+    framework:
+      section_label: The Coworker Framework
+      heading: Where do we start?
+      narrative: Cross-functional teams spend 60% of their day on coordination — not
+        strategy, not delivery. Email, follow-ups, status checks, waiting. The
+        work of managing handoffs between people.<br><br>The Coworker Framework
+        maps where that coordination tax lives in your organization and shows
+        leaders exactly where agent-to-agent AI can eliminate it.
+      note: The framework is the starting point of every engagement. Book a free
+        20-minute discovery call to walk through it.
+    cta_strip_label: Book a Discovery Call →
 cta:
-  heading: "Find where you fit. Then let's talk."
-  subtext: "Whether you're a professional who wants to leave as a builder, or an organization that needs a strategy it can trust — there's a place for you here."
-  cta_label: "Get in touch →"
-  cta_url: "mailto:aparoop@coworkerlabs.com"
-  note_email: "aparoop@coworkerlabs.com"
-  note_linkedin_url: "https://www.linkedin.com/in/aparoop/"
-  note_linkedin_label: "linkedin.com/in/aparoop"
+  heading: Find where you fit. Then let's talk.
+  subtext: Whether you're a professional who wants to leave as a builder, or an
+    organization that needs a strategy it can trust — there's a place for you
+    here.
+  cta_label: Get in touch →
+  cta_url: mailto:aparoop@coworkerlabs.com
+  note_email: aparoop@coworkerlabs.com
+  note_linkedin_url: https://www.linkedin.com/in/aparoop/
+  note_linkedin_label: linkedin.com/in/aparoop
