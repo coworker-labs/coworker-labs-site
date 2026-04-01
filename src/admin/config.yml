@@ -12,10 +12,10 @@ collections:
   # HOMEPAGE
   # ──────────────────────────────────────────────────────────────
   - name: "homepage"
-    label: "Homepage"
+    label: "Home Page"
     files:
       - name: "homepage"
-        label: "Homepage Content"
+        label: "Home Page Content"
         file: "src/_data/homepage.yaml"
         fields:
           - label: "Meta"
@@ -30,27 +30,203 @@ collections:
             widget: "object"
             fields:
               - { label: "Brand Label", name: "brand_label", widget: "string" }
-              - { label: "Heading Line 1", name: "heading_line1", widget: "string" }
-              - { label: "Heading Line 2 (teal)", name: "heading_line2", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Subtext", name: "subtext", widget: "text" }
               - { label: "Primary CTA Label", name: "cta_primary_label", widget: "string" }
               - { label: "Primary CTA URL", name: "cta_primary_url", widget: "string" }
               - { label: "Secondary CTA Label", name: "cta_secondary_label", widget: "string" }
               - { label: "Secondary CTA URL", name: "cta_secondary_url", widget: "string" }
-              - { label: "Detail Line", name: "detail", widget: "string" }
 
-          - label: "Adoption Gap Section"
-            name: "adoption_gap"
+          - label: "Positioning Section"
+            name: "positioning"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                label_singular: "Paragraph"
+                field: { label: "Text", name: "item", widget: "text" }
+
+          - label: "Track Cards"
+            name: "tracks"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                label_singular: "Card"
+                summary: "{{fields.track}}"
+                fields:
+                  - { label: "Track Label", name: "track", widget: "string" }
+                  - { label: "Heading", name: "heading", widget: "string" }
+                  - { label: "Body", name: "body", widget: "text" }
+                  - { label: "CTA Label", name: "cta_label", widget: "string" }
+                  - { label: "CTA URL", name: "cta_url", widget: "string" }
+                  - label: "CTA Style"
+                    name: "cta_style"
+                    widget: "select"
+                    options: ["btn-primary", "btn-outline"]
+
+  # ──────────────────────────────────────────────────────────────
+  # PROFESSIONALS PAGE
+  # ──────────────────────────────────────────────────────────────
+  - name: "professionals"
+    label: "Professionals Page"
+    files:
+      - name: "professionals"
+        label: "Professionals Page Content"
+        file: "src/_data/professionals.yaml"
+        fields:
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Page Title", name: "title", widget: "string" }
+              - { label: "Meta Description", name: "description", widget: "string" }
+
+          - label: "Hero Section"
+            name: "hero"
             widget: "object"
             fields:
               - { label: "Section Label", name: "section_label", widget: "string" }
               - { label: "Heading Line 1", name: "heading_line1", widget: "string" }
               - { label: "Heading Line 2", name: "heading_line2", widget: "string" }
-              - { label: "Heading Line 3", name: "heading_line3", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "text" }
+
+          - label: "Problem Section"
+            name: "problem"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Body Paragraph 1", name: "body_para1", widget: "text" }
               - { label: "Body Paragraph 2", name: "body_para2", widget: "text" }
               - { label: "Kicker", name: "kicker", widget: "string" }
-              - { label: "Stats Footer Note", name: "stats_footer", widget: "string" }
+
+          - label: "How We're Different (Comparison)"
+            name: "comparison"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Other Platforms Column Header", name: "col_them", widget: "string" }
+              - { label: "Coworker Labs Column Header", name: "col_us", widget: "string" }
+              - label: "Rows"
+                name: "rows"
+                widget: "list"
+                label_singular: "Row"
+                summary: "{{fields.category}}"
+                fields:
+                  - { label: "Category", name: "category", widget: "string" }
+                  - { label: "Other Platforms", name: "them", widget: "text" }
+                  - { label: "Coworker Labs", name: "us", widget: "text" }
+
+          - label: "Curriculum"
+            name: "curriculum"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Sub-heading", name: "subheading", widget: "string" }
+              - label: "Weeks"
+                name: "weeks"
+                widget: "list"
+                label_singular: "Week"
+                summary: "{{fields.number}} — {{fields.title}}"
+                fields:
+                  - { label: "Week Number", name: "number", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Instructor", name: "instructor", widget: "string" }
+                  - { label: "Capstone Label", name: "project_label", widget: "string" }
+                  - { label: "Capstone Name", name: "project", widget: "string" }
+                  - { label: "Capstone Detail", name: "project_detail", widget: "text" }
+              - { label: "Time Label", name: "time_label", widget: "string" }
+              - { label: "Time Detail", name: "time_detail", widget: "string" }
+              - { label: "Community Note", name: "community_note", widget: "text" }
+              - { label: "Not For Label", name: "not_for_label", widget: "string" }
+              - { label: "Not For Note", name: "not_for_note", widget: "string" }
+              - { label: "Coming Soon Line", name: "coming_soon", widget: "string" }
+
+          - label: "Products (Coworker Lite / Pro)"
+            name: "products"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Program Cards"
+                name: "cards"
+                widget: "list"
+                label_singular: "Card"
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Badge Text", name: "badge", widget: "string" }
+                  - label: "Badge Style"
+                    name: "badge_style"
+                    widget: "select"
+                    options: ["badge-teal", "badge-grey"]
+                  - { label: "Program Name", name: "name", widget: "string" }
+                  - { label: "Tagline", name: "tagline", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - label: "Details (bullet points)"
+                    name: "details"
+                    widget: "list"
+                    field: { label: "Detail", name: "item", widget: "string" }
+                  - { label: "CTA Label", name: "cta_label", widget: "string" }
+                  - { label: "CTA URL", name: "cta_url", widget: "string" }
+                  - label: "CTA Style"
+                    name: "cta_style"
+                    widget: "select"
+                    options: ["btn-primary", "btn-outline"]
+                  - { label: "Featured", name: "featured", widget: "boolean", default: false }
+
+          - label: "Final CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "text" }
+              - { label: "CTA Label", name: "cta_label", widget: "string" }
+              - { label: "CTA URL", name: "cta_url", widget: "string" }
+              - { label: "Note", name: "note", widget: "string" }
+
+  # ──────────────────────────────────────────────────────────────
+  # ORGANIZATIONS PAGE
+  # ──────────────────────────────────────────────────────────────
+  - name: "organizations"
+    label: "Organizations Page"
+    files:
+      - name: "organizations"
+        label: "Organizations Page Content"
+        file: "src/_data/organizations.yaml"
+        fields:
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Page Title", name: "title", widget: "string" }
+              - { label: "Meta Description", name: "description", widget: "string" }
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - { label: "Heading Line 1", name: "heading_line1", widget: "string" }
+              - { label: "Heading Line 2", name: "heading_line2", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "text" }
+
+          - label: "Problem Section"
+            name: "problem"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body Paragraph 1", name: "body_para1", widget: "text" }
+              - { label: "Body Paragraph 2", name: "body_para2", widget: "text" }
+              - { label: "Kicker", name: "kicker", widget: "string" }
               - label: "Stats"
                 name: "stats"
                 widget: "list"
@@ -61,55 +237,119 @@ collections:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Source", name: "source", widget: "string" }
 
-          - label: "Next Wave Section"
-            name: "next_wave"
-            widget: "object"
-            fields:
-              - { label: "Section Label", name: "section_label", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "text" }
-              - { label: "Body Paragraph 1", name: "body_para1", widget: "text" }
-              - { label: "Body Paragraph 2", name: "body_para2", widget: "text" }
-              - { label: "Window Text", name: "window_text", widget: "string" }
-
-          - label: "How We're Different Section"
-            name: "how_different"
-            widget: "object"
-            fields:
-              - { label: "Section Label", name: "section_label", widget: "string" }
-              - { label: "Heading Line 1", name: "heading_line1", widget: "string" }
-              - { label: "Body Paragraph 1", name: "body_para1", widget: "text" }
-              - { label: "Body Paragraph 2", name: "body_para2", widget: "text" }
-              - { label: "Body Paragraph 3 (bold)", name: "body_para3", widget: "text" }
-              - label: "Pillars"
-                name: "pillars"
-                widget: "list"
-                label_singular: "Pillar"
-                summary: "{{fields.title}}"
-                fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Body", name: "body", widget: "text" }
-
-          - label: "Programs Section"
-            name: "programs"
+          - label: "Coworker Framework"
+            name: "framework"
             widget: "object"
             fields:
               - { label: "Section Label", name: "section_label", widget: "string" }
               - { label: "Heading", name: "heading", widget: "string" }
-              - label: "Program Cards"
+              - { label: "Narrative", name: "narrative", widget: "markdown" }
+              - { label: "Note", name: "note", widget: "string" }
+
+          - label: "Engagement Model"
+            name: "engagement"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                label_singular: "Step"
+                summary: "{{fields.number}} — {{fields.title}}"
+                fields:
+                  - { label: "Number", name: "number", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Detail", name: "detail", widget: "text" }
+
+          - label: "Products / Engagements"
+            name: "products"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Engagement Cards"
                 name: "cards"
                 widget: "list"
-                label_singular: "Program Card"
-                summary: "{{fields.title}}"
+                label_singular: "Card"
+                summary: "{{fields.name}}"
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Body", name: "body", widget: "text" }
-                  - { label: "Meta", name: "meta", widget: "string" }
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Badge Text", name: "badge", widget: "string" }
+                  - label: "Badge Style"
+                    name: "badge_style"
+                    widget: "select"
+                    options: ["badge-teal", "badge-grey"]
+                  - { label: "Price", name: "price", widget: "string" }
+                  - { label: "Price Detail", name: "price_detail", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
                   - { label: "CTA Label", name: "cta_label", widget: "string" }
                   - { label: "CTA URL", name: "cta_url", widget: "string" }
                   - label: "CTA Style"
                     name: "cta_style"
                     widget: "select"
                     options: ["btn-primary", "btn-outline"]
+                  - { label: "Featured", name: "featured", widget: "boolean", default: false }
+
+          - label: "Final CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "text" }
+              - { label: "CTA Label", name: "cta_label", widget: "string" }
+              - { label: "CTA URL", name: "cta_url", widget: "string" }
+              - { label: "Note", name: "note", widget: "string" }
+
+  # ──────────────────────────────────────────────────────────────
+  # ABOUT US PAGE
+  # ──────────────────────────────────────────────────────────────
+  - name: "about"
+    label: "About Us Page"
+    files:
+      - name: "about"
+        label: "About Us Content"
+        file: "src/_data/about.yaml"
+        fields:
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Page Title", name: "title", widget: "string" }
+              - { label: "Meta Description", name: "description", widget: "string" }
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - { label: "Heading Line 1", name: "heading_line1", widget: "string" }
+              - { label: "Heading Line 2", name: "heading_line2", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "text" }
+
+          - label: "Mission Section"
+            name: "mission"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "text" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                label_singular: "Paragraph"
+                field: { label: "Text", name: "item", widget: "text" }
+
+          - label: "Why We Exist"
+            name: "why"
+            widget: "object"
+            fields:
+              - { label: "Section Label", name: "section_label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                label_singular: "Paragraph"
+                field: { label: "Text", name: "item", widget: "text" }
 
           - label: "Team Section"
             name: "team"
@@ -118,320 +358,38 @@ collections:
               - { label: "Section Label", name: "section_label", widget: "string" }
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Intro Text", name: "intro", widget: "text" }
-              - label: "Team Members"
-                name: "members"
+              - label: "Categories"
+                name: "categories"
                 widget: "list"
-                label_singular: "Team Member"
-                summary: "{{fields.name}} — {{fields.org}}"
+                label_singular: "Category"
+                summary: "{{fields.label}} ({{fields.count}})"
                 fields:
-                  - { label: "Name", name: "name", widget: "string" }
-                  - { label: "Organization", name: "org", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Count", name: "count", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
 
-          - label: "Founder Section"
-            name: "founder"
+          - label: "Community Section"
+            name: "community"
             widget: "object"
             fields:
               - { label: "Section Label", name: "section_label", widget: "string" }
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "LinkedIn URL", name: "linkedin_url", widget: "string" }
-              - { label: "LinkedIn Label", name: "linkedin_label", widget: "string" }
-              - label: "Traction Items"
-                name: "traction"
-                widget: "list"
-                label_singular: "Traction Item"
-                summary: "{{fields.strong_text}}"
-                fields:
-                  - { label: "Strong Text", name: "strong_text", widget: "string" }
-                  - { label: "Rest of Text", name: "rest_text", widget: "string" }
-              - { label: "Story Heading Line 1", name: "story_heading_line1", widget: "string" }
-              - { label: "Story Heading Line 2", name: "story_heading_line2", widget: "string" }
-              - label: "Story Paragraphs"
-                name: "story_paragraphs"
-                widget: "list"
-                label_singular: "Paragraph"
-                summary: "{{fields.text}}"
-                fields:
-                  - { label: "Text", name: "text", widget: "markdown" }
-                  - { label: "Highlight (off-white color)", name: "highlight", widget: "boolean", default: false }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body Paragraph 1", name: "body_para1", widget: "text" }
+              - { label: "Body Paragraph 2", name: "body_para2", widget: "text" }
+              - { label: "Statement", name: "statement", widget: "string" }
+              - { label: "Note", name: "note", widget: "string" }
 
-          - label: "CTA Section"
+          - label: "Final CTA"
             name: "cta"
             widget: "object"
             fields:
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Subtext", name: "subtext", widget: "text" }
-              - { label: "CTA Label", name: "cta_label", widget: "string" }
-              - { label: "CTA URL", name: "cta_url", widget: "string" }
-              - { label: "Note Prefix", name: "note_prefix", widget: "string" }
-              - { label: "Waitlist Label", name: "waitlist_label", widget: "string" }
-              - { label: "Waitlist URL", name: "waitlist_url", widget: "string" }
-              - { label: "Note Mid", name: "note_mid", widget: "string" }
-              - { label: "Enterprise Label", name: "enterprise_label", widget: "string" }
-              - { label: "Enterprise URL", name: "enterprise_url", widget: "string" }
-              - { label: "Note Suffix", name: "note_suffix", widget: "string" }
-
-  # ──────────────────────────────────────────────────────────────
-  # WHY US
-  # ──────────────────────────────────────────────────────────────
-  - name: "why_us"
-    label: "Why Us Page"
-    files:
-      - name: "why_us"
-        label: "Why Us Content"
-        file: "src/_data/why_us.yaml"
-        fields:
-          - label: "Meta"
-            name: "meta"
-            widget: "object"
-            fields:
-              - { label: "Page Title", name: "title", widget: "string" }
-              - { label: "Meta Description", name: "description", widget: "string" }
-
-          - label: "Hero Section"
-            name: "hero"
-            widget: "object"
-            fields:
-              - { label: "Section Label", name: "section_label", widget: "string" }
-              - { label: "Heading Line 1", name: "heading_line1", widget: "string" }
-              - { label: "Heading Line 2 (teal)", name: "heading_line2", widget: "string" }
-              - { label: "Subtext", name: "subtext", widget: "text" }
-              - { label: "CTA Label", name: "cta_label", widget: "string" }
-              - { label: "CTA URL", name: "cta_url", widget: "string" }
-
-          - label: "Reality Check Section"
-            name: "reality_check"
-            widget: "object"
-            fields:
-              - { label: "Section Label", name: "section_label", widget: "string" }
-              - { label: "Heading Line 1", name: "heading_line1", widget: "string" }
-              - { label: "Heading Line 2", name: "heading_line2", widget: "string" }
-              - { label: "Their Column Title", name: "col_them_title", widget: "string" }
-              - { label: "Our Column Title", name: "col_us_title", widget: "string" }
-              - label: "Their Steps"
-                name: "them_steps"
-                widget: "list"
-                label_singular: "Step"
-                summary: "{{fields.strong_text}}"
-                fields:
-                  - { label: "Icon", name: "icon", widget: "string" }
-                  - label: "Icon Style"
-                    name: "icon_style"
-                    widget: "select"
-                    options: ["red", "teal"]
-                  - { label: "Strong Text", name: "strong_text", widget: "string" }
-                  - { label: "Strong Color (optional)", name: "strong_color", widget: "string", required: false }
-                  - { label: "Sub Text", name: "sub_text", widget: "text" }
-              - label: "Our Steps"
-                name: "us_steps"
-                widget: "list"
-                label_singular: "Step"
-                summary: "{{fields.strong_text}}"
-                fields:
-                  - { label: "Icon", name: "icon", widget: "string" }
-                  - label: "Icon Style"
-                    name: "icon_style"
-                    widget: "select"
-                    options: ["red", "teal"]
-                  - { label: "Strong Text", name: "strong_text", widget: "string" }
-                  - { label: "Strong Color (optional)", name: "strong_color", widget: "string", required: false }
-                  - { label: "Sub Text", name: "sub_text", widget: "text" }
-
-          - label: "Comparison Table"
-            name: "comparison_table"
-            widget: "object"
-            fields:
-              - { label: "Section Label", name: "section_label", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Subtext", name: "subtext", widget: "string" }
-              - { label: "Column 1 Header", name: "col_1_header", widget: "string" }
-              - { label: "Column 2 Header", name: "col_2_header", widget: "string" }
-              - { label: "Column 2 Sub-header", name: "col_2_subheader", widget: "string" }
-              - { label: "Column 3 Header", name: "col_3_header", widget: "string" }
-              - { label: "Column 3 Sub-header", name: "col_3_subheader", widget: "string" }
-              - { label: "Column 4 Header (Us)", name: "col_4_header", widget: "string" }
-              - label: "Rows"
-                name: "rows"
-                widget: "list"
-                label_singular: "Row"
-                summary: "{{fields.category}}"
-                fields:
-                  - { label: "Category", name: "category", widget: "string" }
-                  - { label: "Col 1 Text", name: "col1", widget: "text" }
-                  - label: "Col 1 Prefix"
-                    name: "col1_prefix"
-                    widget: "select"
-                    options: ["", "check", "cross", "neutral"]
-                    default: ""
-                  - { label: "Col 2 Text", name: "col2", widget: "text" }
-                  - label: "Col 2 Prefix"
-                    name: "col2_prefix"
-                    widget: "select"
-                    options: ["", "check", "cross", "neutral"]
-                    default: ""
-                  - { label: "Col 3 Text", name: "col3", widget: "text" }
-                  - label: "Col 3 Prefix"
-                    name: "col3_prefix"
-                    widget: "select"
-                    options: ["", "check", "cross", "neutral"]
-                    default: ""
-                  - { label: "Col 4 Text (Us)", name: "col4", widget: "text" }
-                  - label: "Col 4 Prefix (Us)"
-                    name: "col4_prefix"
-                    widget: "select"
-                    options: ["", "check", "cross", "neutral"]
-                    default: "check"
-
-          - label: "Missing Layer Section"
-            name: "missing_layer"
-            widget: "object"
-            fields:
-              - { label: "Section Label", name: "section_label", widget: "string" }
-              - { label: "Heading Line 1", name: "heading_line1", widget: "string" }
-              - { label: "Heading Line 2", name: "heading_line2", widget: "string" }
-              - label: "Cards"
-                name: "cards"
-                widget: "list"
-                label_singular: "Card"
-                summary: "{{fields.title}}"
-                fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - label: "Paragraphs"
-                    name: "paragraphs"
-                    widget: "list"
-                    label_singular: "Paragraph"
-                    field: { label: "Text", name: "item", widget: "markdown" }
-                  - { label: "Quote (optional)", name: "quote", widget: "string", required: false }
-
-          - label: "Founder Lens Section"
-            name: "founder_lens"
-            widget: "object"
-            fields:
-              - { label: "Section Label", name: "section_label", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "text" }
-              - label: "Lens Cards"
-                name: "cards"
-                widget: "list"
-                label_singular: "Lens Card"
-                summary: "{{fields.num}} — {{fields.title}}"
-                fields:
-                  - { label: "Number", name: "num", widget: "string" }
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Body", name: "body", widget: "markdown" }
-              - { label: "Outcome Heading", name: "outcome_heading", widget: "string" }
-              - { label: "Outcome Paragraph 1", name: "outcome_para1", widget: "markdown" }
-              - { label: "Outcome Paragraph 2", name: "outcome_para2", widget: "markdown" }
-
-          - label: "CTA Section"
-            name: "cta"
-            widget: "object"
-            fields:
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Subtext", name: "subtext", widget: "string" }
-              - { label: "CTA Label", name: "cta_label", widget: "string" }
-              - { label: "CTA URL", name: "cta_url", widget: "string" }
-              - { label: "Note Text", name: "note_text", widget: "string" }
-              - { label: "Email", name: "email", widget: "string" }
-              - { label: "LinkedIn URL", name: "linkedin_url", widget: "string" }
-              - { label: "LinkedIn Label", name: "linkedin_label", widget: "string" }
-
-  # ──────────────────────────────────────────────────────────────
-  # PROGRAMS
-  # ──────────────────────────────────────────────────────────────
-  - name: "programs"
-    label: "Programs Page"
-    files:
-      - name: "programs"
-        label: "Programs Content"
-        file: "src/_data/programs.yaml"
-        fields:
-          - label: "Meta"
-            name: "meta"
-            widget: "object"
-            fields:
-              - { label: "Page Title", name: "title", widget: "string" }
-              - { label: "Meta Description", name: "description", widget: "string" }
-
-          - label: "Hero Section"
-            name: "hero"
-            widget: "object"
-            fields:
-              - { label: "Section Label", name: "section_label", widget: "string" }
-              - { label: "Heading Line 1", name: "heading_line1", widget: "string" }
-              - { label: "Heading Line 2 (teal)", name: "heading_line2", widget: "string" }
-              - { label: "Subtext", name: "subtext", widget: "text" }
-
-          - label: "Tabs (Professionals / Builders / Organizations)"
-            name: "tabs"
-            widget: "list"
-            label_singular: "Tab"
-            summary: "{{fields.label}}"
-            fields:
-              - { label: "ID (no spaces)", name: "id", widget: "string" }
-              - { label: "Tab Label", name: "label", widget: "string" }
-              - { label: "Tab Sub-label", name: "sub", widget: "string" }
-              - { label: "Fear Icon (emoji)", name: "fear_icon", widget: "string" }
-              - { label: "Fear Banner Heading", name: "fear_heading", widget: "string" }
-              - { label: "Fear Banner Body", name: "fear_body", widget: "markdown" }
-              - label: "Table Headers"
-                name: "table_headers"
-                widget: "object"
-                fields:
-                  - { label: "Col: What you're feeling", name: "col_feeling", widget: "string" }
-                  - { label: "Col: The shift to make", name: "col_shift", widget: "string" }
-                  - { label: "Col: What we give you", name: "col_us", widget: "string" }
-                  - { label: "Col: What you leave with", name: "col_leave", widget: "string" }
-              - label: "Value Table Rows"
-                name: "value_table"
-                widget: "list"
-                label_singular: "Row"
-                summary: "{{fields.category}}"
-                fields:
-                  - { label: "Category", name: "category", widget: "string" }
-                  - { label: "What you're feeling", name: "feeling", widget: "text" }
-                  - { label: "The shift to make", name: "shift", widget: "text" }
-                  - { label: "What we give you", name: "us", widget: "text" }
-                  - { label: "What you leave with", name: "leave", widget: "text" }
-              - { label: "Abstraction / Advisory Block Heading", name: "abstraction_heading", widget: "string", required: false }
-              - { label: "Abstraction Paragraph 1", name: "abstraction_para1", widget: "text", required: false }
-              - { label: "Abstraction Paragraph 2", name: "abstraction_para2", widget: "text", required: false }
-              - { label: "Abstraction Paragraph 3", name: "abstraction_para3", widget: "text", required: false }
-              - label: "Shift Examples (Professionals / Builders tabs)"
-                name: "shift_examples"
-                widget: "list"
-                label_singular: "Shift Example"
-                summary: "{{fields.before_text}}"
-                required: false
-                fields:
-                  - { label: "Before Label", name: "before_label", widget: "string" }
-                  - { label: "Before Text", name: "before_text", widget: "string" }
-                  - { label: "After Label", name: "after_label", widget: "string" }
-                  - { label: "After Text", name: "after_text", widget: "string" }
-              - { label: "Advisory Heading (Organizations tab)", name: "advisory_heading", widget: "string", required: false }
-              - { label: "Advisory Paragraph 1", name: "advisory_para1", widget: "text", required: false }
-              - { label: "Advisory Paragraph 2", name: "advisory_para2", widget: "text", required: false }
-              - { label: "Advisory Statement", name: "advisory_statement", widget: "string", required: false }
-              - { label: "Advisory Paragraph 3", name: "advisory_para3", widget: "text", required: false }
-              - { label: "CTA Strip Heading", name: "cta_strip_heading", widget: "string" }
-              - { label: "CTA Strip Sub-text", name: "cta_strip_sub", widget: "string" }
-              - { label: "CTA Strip Label", name: "cta_strip_label", widget: "string" }
-              - { label: "CTA Strip URL", name: "cta_strip_url", widget: "string" }
-              - label: "CTA Strip Style"
-                name: "cta_strip_style"
-                widget: "select"
-                options: ["btn-primary", "btn-outline"]
-
-          - label: "Final CTA Section"
-            name: "cta"
-            widget: "object"
-            fields:
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Subtext", name: "subtext", widget: "text" }
-              - { label: "CTA Label", name: "cta_label", widget: "string" }
-              - { label: "CTA URL", name: "cta_url", widget: "string" }
-              - { label: "Note Email", name: "note_email", widget: "string" }
-              - { label: "LinkedIn URL", name: "note_linkedin_url", widget: "string" }
-              - { label: "LinkedIn Label", name: "note_linkedin_label", widget: "string" }
+              - { label: "Primary CTA Label", name: "cta_primary_label", widget: "string" }
+              - { label: "Primary CTA URL", name: "cta_primary_url", widget: "string" }
+              - { label: "Secondary CTA Label", name: "cta_secondary_label", widget: "string" }
+              - { label: "Secondary CTA URL", name: "cta_secondary_url", widget: "string" }
+              - { label: "Note", name: "note", widget: "string" }
 
   # ──────────────────────────────────────────────────────────────
   # SITE SETTINGS
