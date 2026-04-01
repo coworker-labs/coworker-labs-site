@@ -1,30 +1,28 @@
 meta:
-  title: "About — Coworker Labs"
-  description: "The AI knowledge gap is real. We built Coworker Labs to close it — for professionals who want to build, and organizations that need a strategy they can trust."
+  title: "About Us — Coworker Labs"
+  description: "Coworker Labs exists to close the AI knowledge gap — for the professionals who need a clear on-ramp and the organizations that need a strategy they can trust."
 
 hero:
   section_label: "About Coworker Labs"
   heading_line1: "The AI knowledge gap is real."
   heading_line2: "We built Coworker Labs to close it."
-  subtext: "The people who actually understand what AI can do — and where it's going — are concentrated in one city. The rest of the world is learning from content that was already out of date when it was published. Coworker Labs is the bridge."
+  subtext: "Silicon Valley has figured out AI. The rest of the world is catching up — often with outdated courses, dated advisory, and frameworks built for a technology that has already moved on. Coworker Labs is the bridge."
 
-founder:
-  section_label: "The Founder"
-  name: "Aparoop"
-  title: "Founder, Coworker Labs"
-  linkedin_url: "https://www.linkedin.com/in/aparoop/"
-  linkedin_label: "↗ linkedin.com/in/aparoop"
-  heading: "Built by someone who has been on every side of this problem."
-  story: "Aparoop spent 10 years at Google solving organizational workflows and processes — and buying from system integrators. He knows what good advisory looks like, and what conflicted advisory costs. The last four years he has been inside the rooms where AI is actually being built — Silicon Valley founder communities, VC investment circles, researcher meetups, AI SaaS workshops, builder networks — while selling AI solutions to enterprise buyers. He came in as a non-technical professional. He left having built AI products, including this one. He understands what professionals need to stay relevant. He understands what organizations need to stop getting it wrong. Coworker Labs is built on that lens."
+mission:
+  section_label: "Our Mission"
+  heading: "Closing the AI knowledge gap — for everyone left outside the room where AI is actually being built."
+  paragraphs:
+    - "The world's AI expertise is concentrated in one city. The decisions being made everywhere else — about careers, about organizational strategy, about where to start with AI — are often made on outdated information."
+    - "Professionals are taking courses built for engineers. Organizations are receiving advisory shaped by vendor relationships. The gap between what's possible with AI and what most professionals and organizations actually know is wider than most realize."
+    - "Coworker Labs exists to close that gap. Silicon Valley practitioners — teaching, advising, and building alongside the professionals and organizations that need them most."
 
 why:
   section_label: "Why We Exist"
   heading: "The gap is bigger than most people realize."
   paragraphs:
-    - "Aparoop has spent four years in rooms where the frontier of AI is discussed — VC investment circles, founder communities, researcher meetups, builder networks. What he kept seeing was the same thing: a massive gap between what the people in those rooms knew and what was available to everyone else."
-    - "Not just in developing markets. In APAC, in EMEA, and across the US outside of San Francisco, even the most enthusiastic AI professionals are working with a version of AI that is already behind. The knowledge is current in one city. The rest of the world is catching up — often with outdated courses, dated advisory, and frameworks built for a technology that has already moved on."
-    - "That gap has a cost. Professionals make career decisions on outdated information. Organizations build AI strategies on frameworks that reflect last year's technology. The decisions made today will shape careers and organizational architecture for years."
-    - "Coworker Labs exists to close that gap — by bringing Silicon Valley's AI expertise directly to the professionals and organizations that need it most."
+    - "AI benchmarks have improved at a pace no education market can match. What was published as a course 18 months ago reflects a technology that has already moved on. And now agentic AI — systems that don't just answer questions but take actions, run workflows, make decisions — is the next transformation layer."
+    - "Most professionals and organizations are navigating this transition without access to current knowledge. Not because they aren't trying. Because the people who are current are in Silicon Valley — and the knowledge isn't getting out fast enough."
+    - "Coworker Labs was built to change that."
 
 team:
   section_label: "The Team"
@@ -44,16 +42,16 @@ team:
 community:
   section_label: "The Community"
   heading: "You don't just learn from Silicon Valley. You join it."
-  body_para1: "Every Coworker Labs cohort graduate joins a private Silicon Valley AI community — a curated network of practitioners, researchers, educators, and fellow professionals navigating the same transition. Access is earned through the program, not sold separately."
-  body_para2: "The community is the compounding asset. The cohort teaches you what AI can do today. The community keeps you current as it changes tomorrow — every two weeks, as new benchmarks drop and new architectures emerge. Members share what they're seeing, what they're building, where the field is heading."
+  body_para1: "Every Coworker Labs cohort graduate joins a private Bay Area AI community — a curated network of practitioners, researchers, educators, and fellow professionals. Access is earned through the program, not sold separately."
+  body_para2: "This is your network in the Bay. The cohort teaches you what AI can do today. The community keeps you current as it changes — and opens doors to career opportunities in Silicon Valley and beyond."
   statement: "The cohort ends. The community doesn't."
   note: "Community platform coming soon. Cohort graduates get first access."
 
 cta:
   heading: "Ready to close the gap?"
-  subtext: "Join the April cohort as a professional. Book a discovery call as an organization. Either way — the knowledge is current, the network is real, and the entry point is accessible."
+  subtext: "Join the April cohort as a professional. Book a discovery call as an organization."
   cta_primary_label: "Apply for the April Cohort →"
   cta_primary_url: "mailto:aparoop@coworkerlabs.com?subject=Cohort Application"
   cta_secondary_label: "Book a Free Discovery Call →"
   cta_secondary_url: "mailto:aparoop@coworkerlabs.com?subject=Discovery Call"
-  note: "Cohort: $499 &nbsp;·&nbsp; 14 hours &nbsp;·&nbsp; April 28 &nbsp;·&nbsp; Consulting from $199/hr &nbsp;·&nbsp; Free 20-min discovery call"
+  note: "Cohort: $499 &nbsp;·&nbsp; 16 hours &nbsp;·&nbsp; April 28 &nbsp;·&nbsp; Consulting from $199/hr &nbsp;·&nbsp; Free 20-min discovery call"

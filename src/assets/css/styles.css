@@ -749,6 +749,65 @@ tbody tr:hover .td-us { background: rgba(0,180,171,0.07); }
   border-left: 3px solid var(--teal);
 }
 
+/* ── Home: positioning section ───────────────────────────────────────── */
+.positioning-section { background: var(--navy-mid); }
+.positioning-body { max-width: 760px; }
+.positioning-body p { color: var(--off-white); font-size: 1.05rem; line-height: 1.9; margin-bottom: 20px; }
+.positioning-body p:last-child { margin-bottom: 0; color: var(--white); font-weight: 500; }
+
+/* ── Home: track cards ───────────────────────────────────────────────── */
+.track-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+.track-card { background: var(--navy-card); border-radius: 12px; padding: 40px; border: 1px solid rgba(160,174,192,0.1); display: flex; flex-direction: column; }
+.track-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--teal); margin-bottom: 12px; }
+.track-card h3 { color: var(--white); font-size: 1.3rem; margin-bottom: 16px; }
+.track-card p { color: var(--grey); font-size: 0.95rem; margin-bottom: 28px; line-height: 1.75; flex: 1; }
+@media (max-width: 700px) { .track-grid { grid-template-columns: 1fr; } }
+
+/* ── Professionals: comparison light ─────────────────────────────────── */
+.comparison-light { margin-top: 48px; overflow-x: auto; }
+.comparison-light table { width: 100%; border-collapse: collapse; }
+.comparison-light th { padding: 14px 20px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; text-align: left; }
+.comparison-light th.th-them { color: var(--grey); border-bottom: 2px solid rgba(248,113,113,0.4); }
+.comparison-light th.th-us { color: var(--teal); border-bottom: 2px solid var(--teal); }
+.comparison-light td { padding: 18px 20px; font-size: 0.9rem; vertical-align: top; border-bottom: 1px solid rgba(160,174,192,0.08); line-height: 1.65; }
+.comparison-light td.td-category { color: var(--grey); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; width: 130px; }
+.comparison-light td.td-them { color: var(--grey); }
+.comparison-light td.td-them::before { content: "✕ "; color: var(--red); }
+.comparison-light td.td-us { color: var(--off-white); }
+.comparison-light td.td-us::before { content: "✓ "; color: var(--teal); }
+
+/* ── Product cards ───────────────────────────────────────────────────── */
+.product-grid { display: grid; gap: 24px; margin-top: 40px; }
+.product-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.product-grid-4 { grid-template-columns: repeat(2, 1fr); }
+.product-card { background: var(--navy-card); border-radius: 12px; padding: 36px; border: 1px solid rgba(160,174,192,0.1); display: flex; flex-direction: column; }
+.product-card.featured { border-color: rgba(0,180,171,0.35); }
+.product-card.coming-soon { opacity: 0.72; }
+.product-badge { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 10px; border-radius: 4px; margin-bottom: 16px; }
+.badge-teal { background: rgba(0,180,171,0.15); color: var(--teal); }
+.badge-grey { background: rgba(160,174,192,0.1); color: var(--grey); }
+.product-name { font-size: 1.25rem; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+.product-tagline { font-size: 0.88rem; color: var(--teal); margin-bottom: 16px; }
+.product-price { font-size: 2rem; font-weight: 800; color: var(--white); margin-bottom: 4px; line-height: 1; }
+.product-price-detail { font-size: 0.82rem; color: var(--grey); margin-bottom: 20px; }
+.product-description { font-size: 0.9rem; color: var(--grey); line-height: 1.75; margin-bottom: 20px; flex: 1; }
+.product-details { list-style: none; margin-bottom: 24px; }
+.product-details li { font-size: 0.85rem; color: var(--off-white); padding: 7px 0; border-bottom: 1px solid rgba(160,174,192,0.08); }
+.product-details li::before { content: "· "; color: var(--teal); }
+
+/* ── Organizations: engagement model ─────────────────────────────────── */
+.org-stats { display: flex; flex-direction: column; gap: 16px; margin-top: 40px; }
+.engagement-steps { margin-top: 40px; }
+.engagement-step { display: flex; gap: 24px; padding: 28px 0; border-bottom: 1px solid rgba(160,174,192,0.08); }
+.engagement-step:last-child { border-bottom: none; }
+.engagement-step-number { font-size: 1.8rem; font-weight: 800; color: rgba(0,180,171,0.35); flex-shrink: 0; width: 52px; line-height: 1; padding-top: 2px; }
+.engagement-step-body { flex: 1; }
+.engagement-step-title { font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: 8px; }
+.engagement-step-detail { font-size: 0.88rem; color: var(--grey); line-height: 1.7; }
+@media (max-width: 700px) {
+  .product-grid-2, .product-grid-4 { grid-template-columns: 1fr; }
+}
+
 /* ── Coworker Framework block ────────────────────────────────────────── */
 .framework-block {
   margin-top: 48px; padding: 40px;

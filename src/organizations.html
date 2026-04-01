@@ -1,0 +1,113 @@
+{% extends "_includes/layouts/base.html" %}
+
+{% block title %}{{ organizations.meta.title }}{% endblock %}
+{% block description %}{{ organizations.meta.description }}{% endblock %}
+
+{% block content %}
+
+  <!-- ══════════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════════ -->
+  <section class="hero hero-compact">
+    <div class="container">
+      <div class="section-label">{{ organizations.hero.section_label }}</div>
+      <h1 class="white">
+        {{ organizations.hero.heading_line1 }}<br>
+        <span class="line2">{{ organizations.hero.heading_line2 }}</span>
+      </h1>
+      <p class="hero-sub">{{ organizations.hero.subtext }}</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       PROBLEM + STATS
+  ══════════════════════════════════════════════════════════ -->
+  <section class="wave-section">
+    <div class="container">
+      <div class="section-label">{{ organizations.problem.section_label }}</div>
+      <h2 class="white">{{ organizations.problem.heading }}</h2>
+      <p style="margin-top:24px">{{ organizations.problem.body_para1 }}</p>
+      <p>{{ organizations.problem.body_para2 }}</p>
+      <div class="window" style="margin-top:32px">{{ organizations.problem.kicker }}</div>
+      <div class="org-stats">
+        {% for stat in organizations.problem.stats %}
+        <div class="stat-card">
+          <div class="stat-number">{{ stat.number }}</div>
+          <div>
+            <div class="stat-label">{{ stat.label }}</div>
+            <div class="stat-source">{{ stat.source }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       COWORKER FRAMEWORK
+  ══════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="container">
+      <div class="framework-block">
+        <div class="section-label">{{ organizations.framework.section_label }}</div>
+        <h3 class="white">{{ organizations.framework.heading }}</h3>
+        <div class="framework-narrative">{{ organizations.framework.narrative }}</div>
+        <p class="framework-note">{{ organizations.framework.note }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       ENGAGEMENT MODEL
+  ══════════════════════════════════════════════════════════ -->
+  <section class="diff-section">
+    <div class="container">
+      <div class="section-label">{{ organizations.engagement.section_label }}</div>
+      <h2 class="white">{{ organizations.engagement.heading }}</h2>
+      <div class="engagement-steps">
+        {% for step in organizations.engagement.steps %}
+        <div class="engagement-step">
+          <div class="engagement-step-number">{{ step.number }}</div>
+          <div class="engagement-step-body">
+            <div class="engagement-step-title">{{ step.title }}</div>
+            <div class="engagement-step-detail">{{ step.detail }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       PRODUCTS
+  ══════════════════════════════════════════════════════════ -->
+  <section id="engage">
+    <div class="container">
+      <div class="section-label">{{ organizations.products.section_label }}</div>
+      <h2 class="white">{{ organizations.products.heading }}</h2>
+      <div class="product-grid product-grid-4">
+        {% for card in organizations.products.cards %}
+        <div class="product-card{% if card.featured %} featured{% endif %}">
+          <span class="product-badge {{ card.badge_style }}">{{ card.badge }}</span>
+          <div class="product-name">{{ card.name }}</div>
+          <div class="product-price">{{ card.price }}</div>
+          <div class="product-price-detail">{{ card.price_detail }}</div>
+          <p class="product-description">{{ card.description }}</p>
+          <a href="{{ card.cta_url }}" class="btn {{ card.cta_style }}" style="margin-top:auto">{{ card.cta_label }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FINAL CTA
+  ══════════════════════════════════════════════════════════ -->
+  <section class="cta-section">
+    <h2>{{ organizations.cta.heading }}</h2>
+    <p class="cta-sub">{{ organizations.cta.subtext }}</p>
+    <a href="{{ organizations.cta.cta_url }}" class="btn btn-primary">{{ organizations.cta.cta_label }}</a>
+    <p style="margin-top:18px;font-size:0.82rem;color:var(--foot)">{{ organizations.cta.note }}</p>
+  </section>
+
+{% endblock %}

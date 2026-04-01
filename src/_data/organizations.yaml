@@ -1,0 +1,98 @@
+meta:
+  title: "For Organizations — Coworker Labs"
+  description: "The Coworker Framework maps where your coordination tax lives. AI Transformational Consultancy builds the strategy to eliminate it."
+
+hero:
+  section_label: "For Organizations"
+  heading_line1: "Your teams are spending 60% of their day"
+  heading_line2: "on coordination. Not work."
+  subtext: "The coordination tax — email, follow-ups, status checks, waiting — is the single largest productivity drain in most organizations. Agent-to-agent AI can eliminate it. The Coworker Framework shows you exactly where to start."
+
+problem:
+  section_label: "The Problem"
+  heading: "Organizations are at the cusp of AI adoption. Most don't know where to start."
+  body_para1: "Most organizations have subscribed to AI tools. Some have engaged advisors. Built pilots. Attended briefings. The coordination tax is unchanged."
+  body_para2: "Cross-functional teams spend 60% of their day managing handoffs — not doing the work they were hired to do. Email threads. Status checks. Waiting for someone to respond. Following up on a document. This isn't a people problem. It's a structural one. And most AI strategies don't address the right layer."
+  kicker: "Agent-to-agent AI systems can eliminate the coordination layer entirely. But only if you know where to deploy them."
+  stats:
+    - number: "1%"
+      label: "of business leaders say their AI strategy is \"mature.\""
+      source: "McKinsey, 2025"
+    - number: "95%"
+      label: "of enterprise AI pilots fail to generate measurable business impact."
+      source: "MIT / Fortune, 2025"
+    - number: "60%"
+      label: "of the workday consumed by coordination, not core work."
+      source: "Industry average, cross-functional workflows"
+
+framework:
+  section_label: "The Coworker Framework"
+  heading: "Where do we start?"
+  narrative: "Cross-functional teams spend 60% of their day on coordination — not strategy, not delivery. Email, follow-ups, status checks, waiting. The work of managing handoffs between people.<br><br>The Coworker Framework maps where that coordination tax lives in your organization and shows leaders exactly where agent-to-agent AI can eliminate it."
+  note: "Every engagement starts here. Book a free 20-minute discovery call to walk through it."
+
+engagement:
+  section_label: "Engagement Model"
+  heading: "How it works."
+  steps:
+    - number: "01"
+      title: "Discovery call — always first"
+      detail: "Free · 20 minutes · No pitch, no deck. We listen to your situation and tell you honestly whether and how we can help."
+    - number: "02"
+      title: "Framework assessment"
+      detail: "We map your highest-coordination workflows using the Coworker Framework — identifying exactly where agent-to-agent AI creates the most leverage."
+    - number: "03"
+      title: "Choose your engagement"
+      detail: "Based on where you are, you select the engagement that fits — from a focused use-case consultation to a full organizational AI blueprint."
+
+products:
+  section_label: "Engagements"
+  heading: "Four ways to work with us."
+  cards:
+    - name: "Discovery Call"
+      badge: "Always First"
+      badge_style: "badge-teal"
+      price: "Free"
+      price_detail: "20 minutes"
+      description: "No pitch. No deck. We listen to your situation and tell you honestly whether and how we can help. Every engagement starts here."
+      cta_label: "Book a Discovery Call →"
+      cta_url: "mailto:aparoop@coworkerlabs.com?subject=Discovery Call"
+      cta_style: "btn-primary"
+      featured: true
+    - name: "AI Use Case Consultation"
+      badge: "Focused"
+      badge_style: "badge-grey"
+      price: "$500"
+      price_detail: "2 hours"
+      description: "A focused session to identify and map AI use cases relevant to your organization and industry. Walk away with a prioritized list of where to start — before deploying any AI tool or process."
+      cta_label: "Book a Session →"
+      cta_url: "mailto:aparoop@coworkerlabs.com?subject=AI Use Case Consultation"
+      cta_style: "btn-outline"
+      featured: false
+    - name: "Blueprint for First Coworker"
+      badge: "Recommended"
+      badge_style: "badge-teal"
+      price: "$10K"
+      price_detail: "Fixed scope"
+      description: "Full workflow mapping using the Coworker Framework. We identify your highest-impact coordination workflow, design the agent-to-agent architecture, and deliver a blueprint your team or a dev shop can execute."
+      cta_label: "Start with a Discovery Call →"
+      cta_url: "mailto:aparoop@coworkerlabs.com?subject=Blueprint for First Coworker"
+      cta_style: "btn-outline"
+      featured: false
+    - name: "Organizational AI Blueprint"
+      badge: "Full Scope"
+      badge_style: "badge-grey"
+      price: "Custom"
+      price_detail: "Scoped engagement"
+      description: "Full AI transformation strategy for your organization. Maps all high-coordination workflows, prioritizes the AI adoption roadmap, and delivers an architecture plan for the full build."
+      cta_label: "Start with a Discovery Call →"
+      cta_url: "mailto:aparoop@coworkerlabs.com?subject=Organizational AI Blueprint"
+      cta_style: "btn-outline"
+      featured: false
+
+cta:
+  heading: "Ready to map your coordination tax?"
+  subtext: "Every engagement starts with a free 20-minute discovery call. No pitch. No deck. Just a direct conversation about where you are and where you want to be."
+  cta_label: "Book a Free Discovery Call →"
+  cta_url: "mailto:aparoop@coworkerlabs.com?subject=Discovery Call"
+  note: "Free 20-min discovery call &nbsp;·&nbsp; Consulting from $199/hr &nbsp;·&nbsp; aparoop@coworkerlabs.com"

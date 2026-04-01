@@ -1,0 +1,137 @@
+{% extends "_includes/layouts/base.html" %}
+
+{% block title %}{{ professionals.meta.title }}{% endblock %}
+{% block description %}{{ professionals.meta.description }}{% endblock %}
+
+{% block content %}
+
+  <!-- ══════════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════════ -->
+  <section class="hero hero-compact">
+    <div class="container">
+      <div class="section-label">{{ professionals.hero.section_label }}</div>
+      <h1 class="white">
+        {{ professionals.hero.heading_line1 }}<br>
+        <span class="line2">{{ professionals.hero.heading_line2 }}</span>
+      </h1>
+      <p class="hero-sub">{{ professionals.hero.subtext }}</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       PROBLEM
+  ══════════════════════════════════════════════════════════ -->
+  <section class="wave-section">
+    <div class="container">
+      <div class="section-label">{{ professionals.problem.section_label }}</div>
+      <h2 class="white">{{ professionals.problem.heading }}</h2>
+      <p style="margin-top:24px">{{ professionals.problem.body_para1 }}</p>
+      <p>{{ professionals.problem.body_para2 }}</p>
+      <div class="window" style="margin-top:32px">{{ professionals.problem.kicker }}</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       HOW WE'RE DIFFERENT
+  ══════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="container">
+      <div class="section-label">{{ professionals.comparison.section_label }}</div>
+      <h2 class="white">{{ professionals.comparison.heading }}</h2>
+      <div class="comparison-light">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th class="th-them">{{ professionals.comparison.col_them }}</th>
+              <th class="th-us">{{ professionals.comparison.col_us }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in professionals.comparison.rows %}
+            <tr>
+              <td class="td-category">{{ row.category }}</td>
+              <td class="td-them">{{ row.them }}</td>
+              <td class="td-us">{{ row.us }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       CURRICULUM
+  ══════════════════════════════════════════════════════════ -->
+  <section class="diff-section">
+    <div class="container">
+      <div class="curriculum-block">
+        <div class="section-label">{{ professionals.curriculum.section_label }}</div>
+        <h3 class="white">{{ professionals.curriculum.heading }}</h3>
+        <p class="curriculum-sub">{{ professionals.curriculum.subheading }}</p>
+        <div class="week-grid">
+          {% for week in professionals.curriculum.weeks %}
+          <div class="week-card">
+            <div class="week-number">{{ week.number }}</div>
+            <div class="week-body">
+              <div class="week-title">{{ week.title }}</div>
+              <div class="week-instructor">{{ week.instructor }}</div>
+              <div class="week-project"><span class="week-project-label">{{ week.project_label }}:</span> {{ week.project }}</div>
+              <div class="week-project-detail">{{ week.project_detail }}</div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="curriculum-meta">
+          <div class="curriculum-time">
+            <span class="curriculum-time-label">{{ professionals.curriculum.time_label }} —</span> {{ professionals.curriculum.time_detail }}
+          </div>
+          <p class="curriculum-community">{{ professionals.curriculum.community_note }}</p>
+        </div>
+        <div class="curriculum-footer">
+          <p><strong class="white">{{ professionals.curriculum.not_for_label }}</strong> {{ professionals.curriculum.not_for_note }}</p>
+          <p class="curriculum-coming-soon">{{ professionals.curriculum.coming_soon }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       PRODUCTS
+  ══════════════════════════════════════════════════════════ -->
+  <section id="apply">
+    <div class="container">
+      <div class="section-label">{{ professionals.products.section_label }}</div>
+      <h2 class="white">{{ professionals.products.heading }}</h2>
+      <div class="product-grid product-grid-2">
+        {% for card in professionals.products.cards %}
+        <div class="product-card{% if card.featured %} featured{% endif %}{% if not card.featured %} coming-soon{% endif %}">
+          <span class="product-badge {{ card.badge_style }}">{{ card.badge }}</span>
+          <div class="product-name">{{ card.name }}</div>
+          <div class="product-tagline">{{ card.tagline }}</div>
+          <p class="product-description">{{ card.description }}</p>
+          <ul class="product-details">
+            {% for detail in card.details %}
+            <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+          <a href="{{ card.cta_url }}" class="btn {{ card.cta_style }}">{{ card.cta_label }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FINAL CTA
+  ══════════════════════════════════════════════════════════ -->
+  <section class="cta-section">
+    <h2>{{ professionals.cta.heading }}</h2>
+    <p class="cta-sub">{{ professionals.cta.subtext }}</p>
+    <a href="{{ professionals.cta.cta_url }}" class="btn btn-primary">{{ professionals.cta.cta_label }}</a>
+    <p style="margin-top:18px;font-size:0.82rem;color:var(--foot)">{{ professionals.cta.note }}</p>
+  </section>
+
+{% endblock %}

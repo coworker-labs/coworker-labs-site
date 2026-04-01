@@ -20,34 +20,22 @@
   </section>
 
   <!-- ══════════════════════════════════════════════════════════
-       FOUNDER
+       MISSION
   ══════════════════════════════════════════════════════════ -->
-  <section id="founder">
+  <section class="wave-section">
     <div class="container">
-      <div class="section-label">{{ about.founder.section_label }}</div>
-      <div class="founder-grid">
-
-        <div class="founder-left">
-          <div class="founder-name">{{ about.founder.name }}</div>
-          <div class="founder-title">{{ about.founder.title }}</div>
-          <a href="{{ about.founder.linkedin_url }}" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-size:0.88rem;color:var(--teal);">
-            {{ about.founder.linkedin_label }}
-          </a>
-        </div>
-
-        <div class="founder-story">
-          <h2 class="white">{{ about.founder.heading }}</h2>
-          <p style="margin-top:24px">{{ about.founder.story }}</p>
-        </div>
-
-      </div>
+      <div class="section-label">{{ about.mission.section_label }}</div>
+      <h2 class="white">{{ about.mission.heading }}</h2>
+      {% for para in about.mission.paragraphs %}
+      <p style="margin-top:{% if loop.first %}24px{% else %}14px{% endif %}">{{ para }}</p>
+      {% endfor %}
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════════════════════
        WHY WE EXIST
   ══════════════════════════════════════════════════════════ -->
-  <section class="wave-section">
+  <section>
     <div class="container">
       <div class="section-label">{{ about.why.section_label }}</div>
       <h2 class="white">{{ about.why.heading }}</h2>
