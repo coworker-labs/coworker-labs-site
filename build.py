@@ -53,7 +53,7 @@ def build():
     # Jinja2 env — loader points at src/ so {% extends %} paths work as written
     env = Environment(
         loader=FileSystemLoader(SRC),
-        autoescape=select_autoescape(["html"]),
+        autoescape=False,
         trim_blocks=True,
         lstrip_blocks=True,
     )
