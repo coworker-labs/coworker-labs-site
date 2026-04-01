@@ -98,6 +98,38 @@
           </div>
           {% if tab.abstraction_para3 %}<p style="margin-top:20px">{{ tab.abstraction_para3 }}</p>{% endif %}
         </div>
+
+        <!-- Curriculum block (Professionals only) -->
+        {% if tab.curriculum is defined %}
+        <div class="curriculum-block">
+          <div class="section-label">{{ tab.curriculum.section_label }}</div>
+          <h3 class="white">{{ tab.curriculum.heading }}</h3>
+          <p class="curriculum-sub">{{ tab.curriculum.subheading }}</p>
+          <div class="week-grid">
+            {% for week in tab.curriculum.weeks %}
+            <div class="week-card">
+              <div class="week-number">{{ week.number }}</div>
+              <div class="week-body">
+                <div class="week-title">{{ week.title }}</div>
+                <div class="week-instructor">{{ week.instructor }}</div>
+                <div class="week-project"><span class="week-project-label">{{ week.project_label }}:</span> {{ week.project }}</div>
+                <div class="week-project-detail">{{ week.project_detail }}</div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="curriculum-meta">
+            <div class="curriculum-time">
+              <span class="curriculum-time-label">{{ tab.curriculum.time_label }} —</span> {{ tab.curriculum.time_detail }}
+            </div>
+            <p class="curriculum-community">{{ tab.curriculum.community_note }}</p>
+          </div>
+          <div class="curriculum-footer">
+            <p><strong class="white">{{ tab.curriculum.not_for_label }}</strong> {{ tab.curriculum.not_for_note }}</p>
+            <p class="curriculum-coming-soon">{{ tab.curriculum.coming_soon }}</p>
+          </div>
+        </div>
+        {% endif %}
         {% endif %}
 
         <div class="cta-strip">
