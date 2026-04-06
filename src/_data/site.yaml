@@ -15,14 +15,12 @@ nav:
   links:
     - label: "Home"
       url: "index.html"
-    - label: "Professionals"
-      url: "professionals.html"
     - label: "Organizations"
       url: "organizations.html"
-    - label: "About Us"
+    - label: "About"
       url: "about.html"
-  cta_label: "Apply Now →"
-  cta_url: "professionals.html#apply"
+  cta_label: "Book a Call →"
+  cta_url: "mailto:aparoop@coworker1.com?subject=Discovery Call"
 
 footer:
   logo_prefix: "CO"

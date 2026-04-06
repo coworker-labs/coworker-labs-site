@@ -1,35 +1,57 @@
 meta:
-  title: "Coworker Labs — Meet Your New Coworker"
-  description: "Coworker Labs helps professionals and organizations understand agentic AI, adopt it, and build with it — before they're left behind."
+  title: "Coworker Labs — Independent AI Transformation Advisory"
+  description: "Most organizations are asking the wrong AI question. Coworker Labs helps leaders understand what an AI-first organization actually looks like — and how to build one."
 
 hero:
   brand_label: "Coworker Labs · Silicon Valley"
-  heading: "Meet your new coworker."
-  subtext: "The world has moved to agentic AI. Coworker Labs is built for the professionals and organizations navigating that transition — before the technology moves further ahead."
-  cta_primary_label: "I'm a Professional →"
-  cta_primary_url: "professionals.html"
-  cta_secondary_label: "I'm an Organization →"
-  cta_secondary_url: "organizations.html"
+  heading_line1: "Most organizations are asking"
+  heading_line2: "the wrong AI question."
+  subtext: "They ask which tools to adopt. The right question is what each employee's role looks like when AI handles the execution layer. That question leads to a completely different strategy — and a measurably different outcome."
+  cta_label: "Book a Free Discovery Call →"
+  cta_url: "mailto:aparoop@coworker1.com?subject=Discovery Call"
 
-positioning:
-  section_label: "What We Do"
-  paragraphs:
-    - "The world has moved to agentic AI. Most professionals and organizations haven't caught up. Not because they haven't tried — they've watched the demos, subscribed to the tools, attended the briefings. But the gap between knowing AI exists and knowing what to do with it has never been wider."
-    - "Coworker Labs is built for that gap. For the professional who needs a clear on-ramp before the technology moves further ahead. For the organization that has started its AI journey and found it stalling."
-    - "Professionals get cohort-based learning — hands-on, practitioner-led, Silicon Valley current. Organizations get AI transformational consultancy — independent, strategic, built for now."
+problem:
+  section_label: "Why AI Transformation Is Failing"
+  heading: "Two worlds. Neither talking to the other."
+  body_para1: "Technology is ready. The infrastructure for enterprise AI — agent systems, knowledge retrieval, compliance frameworks, integration — exists today. Organizations that deploy it correctly will have a structural cost and speed advantage."
+  body_para2: "Adoption is failing. Not because organizations aren't trying. Because the advisory they're receiving is shaped by vendor incentives, not organizational outcomes. System integrators are selling implementation hours. Hyperscalers are selling compute. SaaS platforms are embedding AI features and calling it transformation. None of them start with your workflows."
+  kicker: "The advice you're getting reflects what your advisor is paid to recommend — not what's right for your organization."
+  stats:
+    - number: "95%"
+      label: "of enterprise AI pilots fail to generate measurable business impact."
+      source: "MIT / Fortune, 2025"
+    - number: "1%"
+      label: "of business leaders say their AI strategy is mature."
+      source: "McKinsey, 2025"
+    - number: "70%"
+      label: "of AI transformation is change management — not technology."
+      source: "Coworker Labs framework observation"
 
-tracks:
-  section_label: "Find where you fit"
-  cards:
-    - track: "Professionals"
-      heading: "Coworker Lite & Pro"
-      body: "AI fundamentals, vibe coding, and hands-on building — for non-technicals and engineers. Silicon Valley practitioners as your instructors. A Bay Area community when the cohort ends."
-      cta_label: "See Programs →"
-      cta_url: "professionals.html"
-      cta_style: "btn-primary"
-    - track: "Organizations"
-      heading: "AI Transformational Consultancy"
-      body: "The Coworker Framework maps where your coordination tax lives. From there, we build the strategy — independent, no vendor relationships, starting with a free discovery call."
-      cta_label: "See How It Works →"
-      cta_url: "organizations.html"
-      cta_style: "btn-outline"
+framework:
+  section_label: "The Co.Worker Framework"
+  heading: "What an AI-first organization actually looks like."
+  body_para1: "An AI-first organization is not one that has adopted AI tools. It is one where every employee's role has been redefined around judgment — while AI handles the execution layer. The skills that used to differentiate employees — data retrieval, document drafting, status reporting, coordination — are now the foundational layer. Every employee has access to them through AI."
+  body_para2: "Getting there requires two things to move simultaneously. Cost per unit of service going down — AI is making the organization measurably more efficient. And usage per employee going up — every employee is using AI for their core daily work, not because they were mandated to, but because it solves a real problem for them."
+  window_text: "Both metrics must move together. One without the other is not transformation — it is theater."
+  cta_label: "See how the framework works →"
+  cta_url: "organizations.html"
+
+credibility:
+  section_label: "Why Coworker Labs"
+  heading: "The advisor who has been on every side of this problem."
+  body: "Eleven years at Google running operations at scale — workforce management, vendor governance, cross-functional program management. Buyer of Accenture, Cognizant, Concentrix, and Wipro for a decade. Two years inside Cognizant as an enterprise sales executive, watching AI transformation engagements from the other side. Four years at the intersection of enterprise AI strategy and hands-on building in Silicon Valley."
+  insight: "That combination — operator, buyer, seller — gives a view that most advisors don't have. The case for independent advisory is not a values statement. It is a conclusion drawn from watching the alternative fail, repeatedly."
+  proof_points:
+    - label: "11 years"
+      detail: "Running operations at Google — workforce management, vendor governance, cross-functional programs"
+    - label: "$200M"
+      detail: "In savings through cross-functional workflow optimization at Alphabet"
+    - label: "Independent"
+      detail: "No vendor relationships. No platform partnerships. One incentive: your outcome."
+
+cta:
+  heading: "The first conversation is free."
+  subtext: "No pitch. No deck. A direct conversation about where your organization is and what an AI-first operating model looks like for your specific context."
+  cta_label: "Book a Free Discovery Call →"
+  cta_url: "mailto:aparoop@coworker1.com?subject=Discovery Call"
+  note: "aparoop@coworker1.com &nbsp;·&nbsp; linkedin.com/in/aparoop &nbsp;·&nbsp; San Francisco Bay Area"

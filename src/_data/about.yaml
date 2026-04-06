@@ -1,57 +1,46 @@
 meta:
-  title: "About Us — Coworker Labs"
-  description: "Coworker Labs exists to close the AI knowledge gap — for the professionals who need a clear on-ramp and the organizations that need a strategy they can trust."
+  title: "About — Coworker Labs"
+  description: "Independent AI transformation advisory. No vendor relationships. No platform partnerships. One incentive: your outcome."
 
 hero:
   section_label: "About Coworker Labs"
-  heading_line1: "The AI knowledge gap is real."
-  heading_line2: "We built Coworker Labs to close it."
-  subtext: "Silicon Valley has figured out AI. The rest of the world is catching up — often with outdated courses, dated advisory, and frameworks built for a technology that has already moved on. Coworker Labs is the bridge."
+  heading_line1: "Independent advisory."
+  heading_line2: "No vendor relationships. No co-selling."
+  subtext: "Coworker Labs was built on a simple observation: the organizations most in need of good AI advisory are the ones least likely to receive it — because every major advisory channel in the market has a commercial incentive to recommend something other than what is right for the organization."
 
-mission:
-  section_label: "Our Mission"
-  heading: "Closing the AI knowledge gap — for everyone left outside the room where AI is actually being built."
-  paragraphs:
-    - "The world's AI expertise is concentrated in one city. The decisions being made everywhere else — about careers, about organizational strategy, about where to start with AI — are often made on outdated information."
-    - "Professionals are taking courses built for engineers. Organizations are receiving advisory shaped by vendor relationships. The gap between what's possible with AI and what most professionals and organizations actually know is wider than most realize."
-    - "Coworker Labs exists to close that gap. Silicon Valley practitioners — teaching, advising, and building alongside the professionals and organizations that need them most."
+advisor:
+  section_label: "The Advisor"
+  name: "Aparoop Chakraborty"
+  title: "Founder, Coworker Labs · San Francisco Bay Area"
+  linkedin_url: "https://www.linkedin.com/in/aparoop/"
+  linkedin_label: "↗ linkedin.com/in/aparoop"
+  heading: "The advisor who has been on every side of this problem."
+  story: "Aparoop spent 11 years at Google running operations at scale — workforce management at YouTube, vendor governance across the outsourcing ecosystem, cross-functional program management for Alphabet. He sat across Accenture, Cognizant, Concentrix, and Wipro as the buyer for over a decade. He knows what good advisory looks like, and what conflicted advisory costs. Two years at Cognizant as an enterprise sales executive gave him the view from the other side — watching AI transformation engagements get shaped by quarterly quotas and vendor partnerships rather than organizational outcomes. The last four years have been spent at the intersection of enterprise AI strategy and hands-on building in Silicon Valley — consulting clients on use cases, staying current through practitioner networks, and building the framework that became Coworker Labs."
 
 why:
-  section_label: "Why We Exist"
-  heading: "The gap is bigger than most people realize."
+  section_label: "Why Independent Advisory"
+  heading: "The AI advisory market has a structural problem."
   paragraphs:
-    - "AI benchmarks have improved at a pace no education market can match. What was published as a course 18 months ago reflects a technology that has already moved on. And now agentic AI — systems that don't just answer questions but take actions, run workflows, make decisions — is the next transformation layer."
-    - "Most professionals and organizations are navigating this transition without access to current knowledge. Not because they aren't trying. Because the people who are current are in Silicon Valley — and the knowledge isn't getting out fast enough."
-    - "Coworker Labs was built to change that."
+    - "System integrators are under quarterly sales pressure. Their best AI talent has left — to build startups, join AI SaaS companies, work at the frontier. What remains is a sales organization recommending AI strategies built on certifications from 18 months ago. The advice reflects what they can deliver — not what the organization needs."
+    - "Hyperscalers sell compute. Every recommendation they make about architecture, tooling, and data platforms runs through the lens of what maximizes consumption on their cloud. Organizational efficiency optimization is not their incentive. It is, in fact, against it."
+    - "SaaS platforms embed AI in existing products and call it transformation. Adopting AI features in your existing tools is not becoming AI-first. It is buying more features."
+    - "The result: organizations receive AI strategies shaped by what their advisors are paid to recommend. Wrong architecture gets built. Pilots stall. The gap between AI investment and AI outcomes widens."
+  statement: "Coworker Labs provides independent advisory. We don't co-sell. We have no vendor relationships. Our advice has one incentive: your outcome."
 
-team:
-  section_label: "The Team"
-  heading: "Practitioners from MAG7 and top-tier Silicon Valley SaaS — building AI today, teaching and advising tomorrow."
-  intro: "The Coworker Labs network is not a faculty board. It's a live network of Silicon Valley practitioners actively building with AI. They bring what they shipped last quarter into every cohort session and consulting engagement."
-  categories:
-    - label: "Instructors"
-      count: "6+"
-      description: "Silicon Valley educators who run cohorts, design learning plans, and support professionals as they build"
-    - label: "Consulting Experts"
-      count: "4+"
-      description: "Fractional practitioners who lead AI strategy and transformation engagements for organizations"
-    - label: "Community Contributors"
-      count: "10+"
-      description: "AI practitioners, researchers, and builders from MAG7 and top-tier SaaS — active in the community"
-
-community:
-  section_label: "The Community"
-  heading: "You don't just learn from Silicon Valley. You join it."
-  body_para1: "Every Coworker Labs cohort graduate joins a private Bay Area AI community — a curated network of practitioners, researchers, educators, and fellow professionals. Access is earned through the program, not sold separately."
-  body_para2: "This is your network in the Bay. The cohort teaches you what AI can do today. The community keeps you current as it changes — and opens doors to career opportunities in Silicon Valley and beyond."
-  statement: "The cohort ends. The community doesn't."
-  note: "Community platform coming soon. Cohort graduates get first access."
+approach:
+  section_label: "The Approach"
+  heading: "Workflow-first. Outcome-measured. Independently advised."
+  pillars:
+    - title: "Start with workflows — not tools"
+      body: "Most AI strategies start with technology selection. Coworker Labs starts with your workflows — where work actually happens, where time is being lost, and where AI creates the most leverage. The tools follow the strategy. The strategy follows the workflow."
+    - title: "Measure what matters"
+      body: "Two metrics govern every engagement: cost per unit of service and usage per employee. Both must move together. If cost per unit isn't going down, the ROI isn't there. If usage per employee isn't going up, adoption has failed. Most organizations have neither metric defined before they start."
+    - title: "Build for adoption — not compliance"
+      body: "AI transformation is 70% change management. Employees adopt AI when it solves a real problem for them — not when leadership mandates it. Every engagement is designed to drive genuine adoption from the bottom up, not performative adoption from the top down."
 
 cta:
-  heading: "Ready to close the gap?"
-  subtext: "Join the April cohort as a professional. Book a discovery call as an organization."
-  cta_primary_label: "Apply for the April Cohort →"
-  cta_primary_url: "mailto:aparoop@coworkerlabs.com?subject=Cohort Application"
-  cta_secondary_label: "Book a Free Discovery Call →"
-  cta_secondary_url: "mailto:aparoop@coworkerlabs.com?subject=Discovery Call"
-  note: "Cohort: $499 &nbsp;·&nbsp; 16 hours &nbsp;·&nbsp; April 28 &nbsp;·&nbsp; Consulting from $199/hr &nbsp;·&nbsp; Free 20-min discovery call"
+  heading: "Start with a conversation."
+  subtext: "No pitch. No deck. A direct conversation about where your organization is and what an AI-first operating model looks like for your context."
+  cta_label: "Book a Free Discovery Call →"
+  cta_url: "mailto:aparoop@coworker1.com?subject=Discovery Call"
+  note: "aparoop@coworker1.com &nbsp;·&nbsp; linkedin.com/in/aparoop &nbsp;·&nbsp; San Francisco Bay Area"

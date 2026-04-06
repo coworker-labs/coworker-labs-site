@@ -16,7 +16,6 @@ OUT     = os.path.join(os.path.dirname(__file__), "_site")
 
 PAGES = [
     ("index.html",         "index.html"),
-    ("professionals.html", "professionals.html"),
     ("organizations.html", "organizations.html"),
     ("about.html",         "about.html"),
 ]
@@ -45,7 +44,6 @@ def build():
     ctx = {
         "site":          load_yaml("site.yaml"),
         "homepage":      load_yaml("homepage.yaml"),
-        "professionals": load_yaml("professionals.yaml"),
         "organizations": load_yaml("organizations.yaml"),
         "about":         load_yaml("about.yaml"),
     }

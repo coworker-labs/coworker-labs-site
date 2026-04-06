@@ -20,45 +20,53 @@
   </section>
 
   <!-- ══════════════════════════════════════════════════════════
-       MISSION
+       THE ADVISOR
   ══════════════════════════════════════════════════════════ -->
-  <section class="wave-section">
+  <section id="advisor">
     <div class="container">
-      <div class="section-label">{{ about.mission.section_label }}</div>
-      <h2 class="white">{{ about.mission.heading }}</h2>
-      {% for para in about.mission.paragraphs %}
-      <p style="margin-top:{% if loop.first %}24px{% else %}14px{% endif %}">{{ para }}</p>
-      {% endfor %}
+      <div class="section-label">{{ about.advisor.section_label }}</div>
+      <div class="founder-grid">
+        <div class="founder-left">
+          <div class="founder-name">{{ about.advisor.name }}</div>
+          <div class="founder-title">{{ about.advisor.title }}</div>
+          <a href="{{ about.advisor.linkedin_url }}" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-size:0.88rem;color:var(--teal);">
+            {{ about.advisor.linkedin_label }}
+          </a>
+        </div>
+        <div class="founder-story">
+          <h2 class="white">{{ about.advisor.heading }}</h2>
+          <p style="margin-top:24px">{{ about.advisor.story }}</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════════════════════
-       WHY WE EXIST
+       WHY INDEPENDENT ADVISORY
   ══════════════════════════════════════════════════════════ -->
-  <section>
+  <section class="wave-section">
     <div class="container">
       <div class="section-label">{{ about.why.section_label }}</div>
       <h2 class="white">{{ about.why.heading }}</h2>
       {% for para in about.why.paragraphs %}
       <p style="margin-top:{% if loop.first %}24px{% else %}14px{% endif %}">{{ para }}</p>
       {% endfor %}
+      <div class="window" style="margin-top:32px">{{ about.why.statement }}</div>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════════════════════
-       THE TEAM
+       THE APPROACH
   ══════════════════════════════════════════════════════════ -->
-  <section class="team-section" id="team">
+  <section class="diff-section">
     <div class="container">
-      <div class="section-label">{{ about.team.section_label }}</div>
-      <h2 class="white">{{ about.team.heading }}</h2>
-      <p class="team-intro" style="margin-top:16px">{{ about.team.intro }}</p>
-      <div class="team-grid">
-        {% for cat in about.team.categories %}
-        <div class="team-card">
-          <div class="team-count">{{ cat.count }}</div>
-          <div class="team-name">{{ cat.label }}</div>
-          <div class="team-org">{{ cat.description }}</div>
+      <div class="section-label">{{ about.approach.section_label }}</div>
+      <h2 class="white">{{ about.approach.heading }}</h2>
+      <div class="pillars" style="margin-top:48px">
+        {% for pillar in about.approach.pillars %}
+        <div class="pillar">
+          <h3>{{ pillar.title }}</h3>
+          <p>{{ pillar.body }}</p>
         </div>
         {% endfor %}
       </div>
@@ -66,30 +74,13 @@
   </section>
 
   <!-- ══════════════════════════════════════════════════════════
-       THE COMMUNITY
-  ══════════════════════════════════════════════════════════ -->
-  <section class="diff-section">
-    <div class="container">
-      <div class="section-label">{{ about.community.section_label }}</div>
-      <h2 class="white">{{ about.community.heading }}</h2>
-      <p style="margin-top:24px">{{ about.community.body_para1 }}</p>
-      <p>{{ about.community.body_para2 }}</p>
-      <div class="window" style="margin-top:32px">{{ about.community.statement }}</div>
-      <p class="muted" style="margin-top:16px;font-size:0.88rem">{{ about.community.note }}</p>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════════════════════
        FINAL CTA
   ══════════════════════════════════════════════════════════ -->
-  <section class="cta-section" id="apply">
+  <section class="cta-section" id="contact">
     <h2>{{ about.cta.heading }}</h2>
     <p class="cta-sub">{{ about.cta.subtext }}</p>
-    <div class="cta-actions" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px">
-      <a href="{{ about.cta.cta_primary_url }}" class="btn btn-primary">{{ about.cta.cta_primary_label }}</a>
-      <a href="{{ about.cta.cta_secondary_url }}" class="btn btn-outline">{{ about.cta.cta_secondary_label }}</a>
-    </div>
-    <p style="margin-top:20px;font-size:0.82rem;color:var(--foot)">{{ about.cta.note }}</p>
+    <a href="{{ about.cta.cta_url }}" class="btn btn-primary">{{ about.cta.cta_label }}</a>
+    <p style="margin-top:18px;font-size:0.82rem;color:var(--foot)">{{ about.cta.note }}</p>
   </section>
 
 {% endblock %}
